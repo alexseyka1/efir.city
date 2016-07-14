@@ -9,24 +9,28 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/punycode" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cebe/markdown" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/dektrium/yii2-user" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-app-basic" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-authclient" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-codeception" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-debug" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-faker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -51,24 +55,28 @@
           <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
           <root url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dektrium/yii2-user" />
           <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-app-basic" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-authclient" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-codeception" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-debug" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-faker" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
         </CLASSES>
         <SOURCES>
@@ -79,24 +87,28 @@
           <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery-ui" />
           <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
           <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
           <root url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
           <root url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/dektrium/yii2-user" />
           <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/phpspec/php-diff" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-app-basic" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-authclient" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-codeception" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-debug" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-faker" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
+          <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
         </SOURCES>
       </library>
