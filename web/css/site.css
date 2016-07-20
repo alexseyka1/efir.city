@@ -1,6 +1,8 @@
 html,
 body {
     height: 100%;
+    background-color: #edeef0;
+    font-family: Arial;
 }
 
 .wrap {
@@ -11,8 +13,239 @@ body {
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+    //padding: 70px 15px 20px;
+    padding-top: 10px;
 }
+
+.logoHeader {
+    border: 1px solid #3670b0;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    background: #3670b0;
+    //background: #3f51b5;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.titleService {
+    text-align: center;
+    font-size: 2em;
+}
+
+.threeTitleText {
+    text-align: justify;
+    font-size: 1.15em;
+    margin-bottom: 20px;
+}
+
+.leftBarBlock {
+    padding-top: 5px;
+    border: 1px solid #ddd;
+    min-height: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+.rightBarBlock {
+    min-height: auto;
+}
+.leftBarBlockHeader {
+    color: #0099e4;
+    border-left: 2px solid #3670b0;
+    background: #f6f7fb;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 0;
+    width: 100%;
+}
+.rightBarBlockHeaderActive {
+    color: #262f5a;
+    font-family: Arial;
+    font-size: 18px;
+    cursor: pointer;
+}
+.rightBarBlockHeaderNonActive {
+    color: #262f5a;
+    font-family: Arial;
+    font-size: 18px;
+    border-left: none;
+    background: transparent;
+    cursor: pointer;
+}
+.rightBarBlockHeaderActive:hover, .rightBarBlockHeaderNonActive:hover {
+    color: white;
+    background: #3670b0;
+}
+
+.socialBlock {
+    color: white;
+    font-family: Arial;
+    padding: 8px;
+    cursor: pointer;
+    width: 31%;
+    margin: 2px;
+    position: relative;
+}
+.socialBlockVk {
+    background: #013453;
+}
+.socialBlockFb {
+    background: #213768;
+}
+.socialBlockOk {
+    background: #ff6600;
+}
+
+.centerWindowDiv {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.centerTab.col-md-3 {
+    width: 20%;
+    border: 1px solid #f2edf3;
+    border-bottom: none;
+    text-align: center;
+    background: #e1dce2;
+    //min-height: 80px;
+    margin-left: -1px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.centerTab.col-md-3:hover {
+    color: white;
+    background: #3f51b5;
+}
+
+.centerTab.col-md-3.centerTabActive {
+    color: white;
+    background: #3f51b5;
+}
+
+.leftBarText {
+    margin-left: 1em;
+}
+
+span.categoryImage {
+    font-size: 33px;
+
+}
+
+div.socialIcon {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 10px 10px 6px;
+    width: 100%;
+    height: 100%;
+}
+
+.socialBlockTextVk {
+    font-weight: bold;
+    position: absolute;
+    top: 13px;
+    left: 22px;
+    font-size: 24px;
+}
+.socialBlockTextFb {
+    font-weight: bold;
+    position: absolute;
+    top: 7px;
+    left: 23px;
+    font-size: 33px;
+}
+.socialBlockTextOk {
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 20px;
+}
+button.buttonBack {
+    border-radius: 0px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+div.windowChat {
+    background: #fff;
+    min-height: 550px;
+    max-height: 550px;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+}
+.row.message {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+span.time {
+    color: grey;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+}
+span.time div.timeDate {
+    margin-top: 1.8em;
+}
+.messageTitle {
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: Arial;
+}
+.messageText {
+    font-family: Arial;
+    word-wrap: break-word;
+}
+.answerBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+}
+.answerMessage {
+    text-align: center;
+}
+button.bottomButtonWrite {
+    border-radius: 0px;
+    border: 1px solid #aaa;
+    margin-top: 10px;
+    margin-bottom:10px;
+    color: #3670b0;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    margin-bottom:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index:1000;
+}
+.emptyChatMessage {
+    text-align: center;
+    background: #e8eaf6;
+    color: grey;
+    font-size: 16px;
+    padding: 20px;
+}
+div.trayMessage p:first-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+div.trayMessage {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
 
 .footer {
     height: 60px;
@@ -88,4 +321,8 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+a {
+    color: #3670b0
 }

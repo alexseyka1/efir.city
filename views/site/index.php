@@ -2,52 +2,57 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Efir.cityt';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+<div class="wizard" data-initialize="wizard" id="myWizard">
+    <div class="steps-container">
+        <ul class="steps">
+            <li data-step="1" data-name="country" class="active">
+                <span class="badge">1</span>Выберите страну
+                <span class="chevron"></span>
+            </li>
+            <li data-step="2" data-name="region">
+                <span class="badge">2</span>Теперь регион
+                <span class="chevron"></span>
+            </li>
+            <li data-step="3" data-name="city">
+                <span class="badge">3</span>И остался только город
+                <span class="chevron"></span>
+            </li>
+        </ul>
     </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+    <div class="step-content">
+        <div class="step-pane active sample-pane alert" data-step="1">
+            <h2>Добро пожаловать!</h2>
+            <p style="font-size: 1.5em; margin-bottom: 30px;">Для того чтобы начать общение выберите вашу страну:</p>
+            <p>
+                <select id="selectCountry" class="form-control">
+                    <option value="-1">...</option>
+                    <?php if(!empty($allCountries)){ foreach($allCountries as $country){ ?>
+                        <option value="<?=$country['country_id'];?>"><?=$country['country_name'];?></option>
+                    <? }} ?>
+                </select>
+            </p>
         </div>
-
+        <div class="step-pane sample-pane sample-pane alert" data-step="2">
+            <h2>Теперь выберите ваш регион из доступных ниже:</h2>
+            <p>
+                <select id="selectRegion" class="form-control">
+                    <option value="-1">...</option>
+                </select>
+            </p>
+        </div>
+        <div class="step-pane sample-pane sample-pane alert" data-step="3">
+            <h2>Вы всего в одном шаге от веселого общения!</h2>
+            <p>
+                <select id="selectCity" class="form-control" style="margin-bottom: 40px;">
+                    <option value="-1">...</option>
+                </select>
+                <button class="btn btn-primary btn-lg btn-block" id="goChat" style="display: none;">Начать!</button>
+            </p>
+        </div>
     </div>
+
+
 </div>

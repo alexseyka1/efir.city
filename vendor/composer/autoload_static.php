@@ -14,14 +14,21 @@ class ComposerStaticInit53f0f37c0cd56dd1cdf5343164ffba14
     public static $prefixLengthsPsr4 = array (
         'y' => 
         array (
+            'yiizh\\fuelux\\' => 13,
             'yii\\swiftmailer\\' => 16,
+            'yii\\jui\\' => 8,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\codeception\\' => 16,
             'yii\\bootstrap\\' => 14,
+            'yii\\authclient\\' => 15,
             'yii\\' => 4,
+        ),
+        'd' => 
+        array (
+            'dektrium\\user\\' => 14,
         ),
         'c' => 
         array (
@@ -34,9 +41,17 @@ class ComposerStaticInit53f0f37c0cd56dd1cdf5343164ffba14
     );
 
     public static $prefixDirsPsr4 = array (
+        'yiizh\\fuelux\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiizh/yii2-fuelux',
+        ),
         'yii\\swiftmailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
+        ),
+        'yii\\jui\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
         ),
         'yii\\gii\\' => 
         array (
@@ -62,9 +77,17 @@ class ComposerStaticInit53f0f37c0cd56dd1cdf5343164ffba14
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap',
         ),
+        'yii\\authclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-authclient',
+        ),
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'dektrium\\user\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dektrium/yii2-user',
         ),
         'cebe\\markdown\\' => 
         array (
