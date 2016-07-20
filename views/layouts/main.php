@@ -6,6 +6,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
+use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
@@ -17,17 +18,19 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?=!empty($this->context->seoPage) ? $this->context->seoPage['meta'] : '';?>
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+    <link href="/fuelux/css/fuelux.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="fuelux ">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
     <?php
-    NavBar::begin([
-        'brandLabel' => 'My Company',
+    /*NavBar::begin([
+        'brandLabel' => 'Efir.cityt',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -53,26 +56,26 @@ AppAsset::register($this);
             )
         ],
     ]);
-    NavBar::end();
+    NavBar::end();*/
     ?>
 
     <div class="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+            'homeLink' => ['label' => 'Главная',
+                'url' => Yii::$app->getHomeUrl()],
         ]) ?>
-        <?= $content ?>
-    </div>
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+        
+        <?=$content;?>
 
 <?php $this->endBody() ?>
 </body>
+
+<script src="/fuelux/js/fuelux.min.js"></script>
+<script src="/js/scrollto.js"></script>
+<script src="/js/jquery.sticky.js"></script>
+<script src="/js/jquery.inputmask.bundle.js"></script>
+<script src="/js/jquery.noty.packaged.min.js"></script>
+
 </html>
 <?php $this->endPage() ?>

@@ -8,6 +8,7 @@
 namespace app\assets;
 
 use yii\web\AssetBundle;
+use \yiizh\fuelux\FuelUXAsset;
 
 /**
  * @author Qiang Xue <qiang.xue@gmail.com>
@@ -21,9 +22,11 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
+        'js/site.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+        //'yiizh\fuelux\FuelUXAsset',
     ];
 }

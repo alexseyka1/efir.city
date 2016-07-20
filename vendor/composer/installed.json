@@ -1121,5 +1121,52 @@
             "yii2",
             "yii2-user"
         ]
+    },
+    {
+        "name": "yiizh/yii2-fuelux",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiizh/yii2-fuelux.git",
+            "reference": "f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiizh/yii2-fuelux/zipball/f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4",
+            "reference": "f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4",
+            "shasum": ""
+        },
+        "require": {
+            "yiisoft/yii2": "*"
+        },
+        "time": "2016-06-28 05:55:06",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yiizh\\fuelux\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Di Zhang",
+                "email": "zhangdi_me@163.com"
+            }
+        ],
+        "description": "The Fuel UX extension for Yii2.",
+        "homepage": "https://github.com/yiizh/fuelux",
+        "keywords": [
+            "Fuel UX",
+            "extension",
+            "yii2"
+        ]
     }
 ]

@@ -32,6 +32,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/yiizh/yii2-fuelux" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -39,9 +40,11 @@
       <library name="PHARS">
         <CLASSES>
           <root url="phar://$MODULE_DIR$/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/composer_2.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/composer.phar/" />
+          <root url="phar://$MODULE_DIR$/composer_2.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -78,6 +81,7 @@
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/yiizh/yii2-fuelux" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
@@ -110,6 +114,7 @@
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-gii" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-jui" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/yiizh/yii2-fuelux" />
         </SOURCES>
       </library>
     </orderEntry>

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "55fea58bc6924ef1210b4aab51e8af7d",
-    "content-hash": "5718b991617028a1d87e4dcfa7a9c1ca",
+    "hash": "d22bfd286f45e34f1ab2b026a8c64a60",
+    "content-hash": "4a4e21d03df61a5fae68794e2a3b202c",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -778,6 +778,51 @@
                 "yii2"
             ],
             "time": "2016-03-17 03:58:49"
+        },
+        {
+            "name": "yiizh/yii2-fuelux",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiizh/yii2-fuelux.git",
+                "reference": "f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiizh/yii2-fuelux/zipball/f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4",
+                "reference": "f8d0a56a5b0f8efe5512cf4ebd0a4cd0dcc5b2e4",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yiizh\\fuelux\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Di Zhang",
+                    "email": "zhangdi_me@163.com"
+                }
+            ],
+            "description": "The Fuel UX extension for Yii2.",
+            "homepage": "https://github.com/yiizh/fuelux",
+            "keywords": [
+                "Fuel UX",
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-06-28 05:55:06"
         }
     ],
     "packages-dev": [
