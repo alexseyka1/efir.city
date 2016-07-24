@@ -223,7 +223,7 @@ class SiteController extends Controller
                 'seoPage' => $seoPage,
                 'categoryInfo' => $categoryInfo,
             ];
-            $this->layout = 'cityt';
+            $this->layout = 'city';
             return $this->render('category', $data);
         }else{
             return $this->render('error',[

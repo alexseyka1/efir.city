@@ -89,7 +89,7 @@ AppAsset::register($this);
                 <div class="col-md-12 threeTitleText">
                     <?
                         $title_text = !empty($this->context->seoPage) ? $this->context->seoPage['title_text'] : $this->context->settings['default_title_text'];
-                        $title_text = str_replace('{cityt}',$this->context->city,$title_text);
+                        $title_text = str_replace('{city}',$this->context->city,$title_text);
                         $title_text = str_replace('{category}',$this->context->categoryInfo['category_name'],$title_text);
                     echo $title_text;
                     ?>

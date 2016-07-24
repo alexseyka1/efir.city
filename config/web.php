@@ -50,12 +50,12 @@ $config = [
             'enableStrictParsing' => false,
             'rules' => [
                 '' => 'site/index',
-                '<cityId:\d+>' => 'site/cityt',
+                '<cityId:\d+>' => 'site/city',
                 '<cityId:\d+>/<categoryId:\d+>' => 'site/category',
                 'get/all/regions' => 'get/regions',
                 'get/all/cities' => 'get/cities',
                 'ajax/getMessages/<cityId:\d+>/<categoryId:\d+>/<lastMessageId:\d+>' => 'get/ajaxmessages',
-                'admin/ssh/E191Wpbt5P' => 'admin/default/ssh',
+                'admin/ssh/command' => 'admin/default/ssh',
                 'ajax/getAjaxScroll/<cityId:\d+>/<categoryId:\d+>/<firstMessageId:\d+>' => 'get/infinitescroll',
                 
                 'new/message/<cityId:\d+>/<categoryId:\d+>' => 'get/newmessage',
@@ -69,6 +69,7 @@ $config = [
                 'admin/city' => 'admin/cityt/index',
                 'admin/country' => 'admin/country/index',
                 'admin/messages' => 'admin/messages/index',
+                'admin/statmessages' => 'admin/messages/stat',
                 'admin/region' => 'admin/region/index',
                 'admin/seo' => 'admin/seo/index',
                 'admin/sitesettings' => 'admin/sitesettings/index',
@@ -101,12 +102,6 @@ $config = [
         ],
         'admin' => [
             'class' => 'app\modules\admin\Module',
-        ],
-        'gii' => [
-            'class' => 'yii\gii\Module',
-            'allowedIPs' => [
-                '93.74.83.107',
-            ],
         ],
     ],
     'params' => $params,

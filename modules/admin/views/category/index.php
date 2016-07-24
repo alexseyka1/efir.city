@@ -29,8 +29,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'city_id',
             'city_number',
             'sort',
-            // 'icon',
-            // 'active',
+             'icon',
+             'active',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

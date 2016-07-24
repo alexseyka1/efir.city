@@ -64,7 +64,7 @@ private $db;
                 $sql = "
                     SELECT
                       *
-                    FROM workslimfr.cityt c
+                    FROM workslimfr.city c
                     WHERE c.region_id = '{$regionId}'
                     AND c.active = 1
                 ";
@@ -127,7 +127,7 @@ private $db;
                         co.country_name,
                         r.name as region_name,
                         c.name as city_name
-                    FROM workslimfr.cityt c
+                    FROM workslimfr.city c
                     LEFT JOIN workslimfr.region r ON c.region_id = r.region_id
                     LEFT JOIN workslimfr.country co ON c.country_id = co.country_id
                     WHERE c.city_id = {$cityId}
@@ -234,7 +234,21 @@ private $db;
                                 m.author_name,
                                 m.author_uid,
                                 m.message_text,
-                                m.post_datetime
+                                m.post_datetime,
+                                (
+                                  SELECT
+                                    m2.author_uid
+                                  FROM messages m2
+                                  WHERE m2.id = m.message_to
+                                  LIMIT 1
+                                ) as `to`,
+                                (
+                                  SELECT
+                                    m2.connect_phone
+                                  FROM messages m2
+                                  WHERE m2.id = m.message_to
+                                  LIMIT 1
+                                ) as `toPhone`
                             FROM workslimfr.messages m
                             WHERE m.id > {$lastMessageId}
                             AND m.is_paid = 1
@@ -302,6 +316,7 @@ private $db;
                     'post_datetime' => $datetime,
                     'author_name' => $dataObj->name,
                     'author_uid' => $dataObj->jsSessionId,
+                    'message_to' => !empty($dataObj->messageTo) ? $dataObj->messageTo : null,
                     'message_text' => $dataObj->messageText,
                     'city_id' => $cityId,
                     'category_id' => $categoryId,

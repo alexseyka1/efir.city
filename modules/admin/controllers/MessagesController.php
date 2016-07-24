@@ -5,6 +5,7 @@ namespace app\modules\admin\controllers;
 use Yii;
 use app\modules\admin\models\Messages;
 use app\modules\admin\models\MessagesSearch;
+use yii\db\Query;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -141,6 +142,87 @@ class MessagesController extends Controller
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    public function actionStat(){
+        $this->layout = "main";
+        try {
+            /*$subQuery = (new Query())
+                ->select('c.city_id,c.name,c.region_id,COUNT(m.id) AS count_messages')
+                ->from('messages m')
+                ->leftJoin('city c', 'm.city_id = c.city_id')
+                ->orderBy(['c.region_id' => SORT_DESC])
+                ->groupBy('c.city_id');
+            $query = (new Query())
+                ->select('r.region_id,r.name as region_name,cat.city_id,cat.name,cat.count_messages')
+                ->from(['cat' => $subQuery])
+                ->leftJoin('region r', 'cat.region_id = r.region_id')
+                ->all();*/
+            $sql = "
+                SELECT
+                  r.region_id,
+                  r.name as region_name,
+                  cat.city_id,
+                  cat.name,
+                  cat.messages_day,
+                  cat.messages_yesterday,
+                  cat.messages_week,
+                  cat.messages_month,
+                  cat.messages_all
+                FROM (
+                  SELECT
+                    c.city_id,
+                    c.name,
+                    c.region_id,
+                    (
+                      SELECT
+                        COUNT(id) as mess_day
+                        FROM workslimfr.messages m2
+                      WHERE m2.city_id = c.city_id
+                      AND DATE(m2.post_datetime) = DATE(NOW())
+                    ) as messages_day,
+                    (
+                      SELECT
+                        COUNT(id) as mess_day
+                        FROM workslimfr.messages m2
+                      WHERE m2.city_id = c.city_id
+                      AND DATE(m2.post_datetime) = DATE(NOW() - INTERVAL 1 DAY)
+                    ) as messages_yesterday,
+                    (
+                      SELECT
+                        COUNT(id) as mess_day
+                        FROM workslimfr.messages m2
+                      WHERE m2.city_id = c.city_id
+                      AND DATE(m2.post_datetime) >= DATE(NOW() - INTERVAL 7 DAY)
+                    ) as messages_week,
+                    (
+                      SELECT
+                        COUNT(id) as mess_day
+                        FROM workslimfr.messages m2
+                      WHERE m2.city_id = c.city_id
+                      AND DATE(m2.post_datetime) >= DATE(NOW() - INTERVAL 30 DAY)
+                    ) as messages_month,
+                    COUNT(m.id) AS messages_all
+                  FROM workslimfr.messages m
+                    LEFT JOIN workslimfr.city c ON m.city_id = c.city_id
+                    WHERE m.is_paid = 1
+                  GROUP BY c.city_id
+                ) cat
+                LEFT JOIN workslimfr.region r ON cat.region_id = r.region_id
+            ";
+            $query = \Yii::$app->db->createCommand($sql)->queryAll();
+            if(!$query){
+                throw new \Exception('Не удалось выбрать из бд регионы');
+            }else{
+                $regions = [];
+                foreach ($query as $key => $region) {
+                    $regions[$region['region_id']][] = $region;
+                }
+                return $this->render('stat', ['q' => $regions]);   
+            }
+        }catch (\Exception $e){
+            echo $e->getMessage();
         }
     }
 }
