@@ -1,7 +1,7 @@
 <div class="container-fluid" style="padding-top: 50px;">
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="/admin/ssh/E191Wpbt5P">
+            <form method="post" action="/admin/ssh/command">
                 <input type="text" style="width:100%;height:30px;" name="command" autofocus>
                 <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
             </form>    

@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'country_name',
             'code_iso',
             'phone_code',
-            // 'active',
+             'active',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

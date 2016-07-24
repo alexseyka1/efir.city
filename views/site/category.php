@@ -17,6 +17,7 @@ $this->title = !empty($seoPage) ? $seoPage['title'] : 'Общение в ' . $th
             </div>
             <div class="modal-body">
                 <div class="row">
+                    <input type="hidden" id="newMessageTo">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <input type="text" class="form-control" placeholder="Ваше имя" id="newMessageName">
                     </div>
@@ -36,7 +37,7 @@ $this->title = !empty($seoPage) ? $seoPage['title'] : 'Общение в ' . $th
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px;">
-                        <input type="checkbox" id="newMessageAllowRules"> Я согласен с правилами сервиса
+                        <input type="checkbox" id="newMessageAllowRules" checked> Я согласен с <strong style="font-style: italic">правилами</strong> сервиса
                     </div>
                 </div>
             </div>

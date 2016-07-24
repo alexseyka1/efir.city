@@ -174,7 +174,9 @@ function chat(){
                     let newMessagesString = '';
                     for(let message in result){
                         let datetime = new Date(),
-                            messageDatetime = result[message].post_datetime.split(' ');
+                            messageDatetime = result[message].post_datetime.split(' '),
+                            messageTo = result[message].to,
+                            messageToPhone = result[message].toPhone;
                             if(datetime.getMonth().length == 1) {
                                 var dateString = datetime.getFullYear()
                                     + '-' + (datetime.getMonth()+1)
@@ -200,13 +202,25 @@ function chat(){
                                 </div>
                                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 answerBlock">
                                     <div class="answerMessage">
-                                        <a style="color:#3670b0;cursor:pointer;" class="buttonAnswerToMessage" data-to="`+result[message].author_name+`">Ответить</a>    
+                                        <a style="color:#3670b0;cursor:pointer;" class="buttonAnswerToMessage" data-to="`+result[message].id+`" data-toName="`+result[message].author_name+`">Ответить</a>    
                                     </div>
                                 </div>
                                 
                             </div>
                         `;
                         localStorage.setItem('lastMessageId',result[message].id);
+                        if(isLoaded) {
+                            if (messageTo == getCookie('JSESSIONID') || messageToPhone == localStorage.getItem('connectPhone')) {
+                                noty({
+                                    text: '<div class="trayMessage"><p>Вам ответили!</p><p>' + result[message].author_name + ':</p><p>' + result[message].message_text + '</p></div>',
+                                    layout: 'topRight',
+                                    theme: 'defaultTheme',
+                                    timeout: 6000, /*killer: false,*/
+                                    closeWith: ['click'],
+                                    type: 'info'
+                                });
+                            }
+                        }
                     }
                     if($('div.windowChat').text().trim() == "Здесь еще пусто! Напиши сообщение, будь первым!"){
                         $('div.windowChat').last().html('');
@@ -216,9 +230,11 @@ function chat(){
                     }
                     $('div.windowChat').last().append(newMessagesString);
                     $('a.buttonAnswerToMessage').click(function(){
-                        let to = $(this).attr('data-to');
+                        let to = $(this).attr('data-to'),
+                            toName = $(this).attr('data-toName');
                         if(to){
-                            $('.modal textarea#newMessageText').val(to+', ');
+                            $('.modal textarea#newMessageText').val(toName+', ');
+                            $('.modal input#newMessageTo').val(to);
                             $('.modal').modal('show');
                             setTimeout(function() {
                                 $('.modal textarea#newMessageText').focus();
@@ -391,7 +407,8 @@ function sendNewMessageToChat() {
         messageText = $('.modal #newMessageText'),
         payPhone = $('.modal #newMessagePayPhone'),
         connectPhone = $('.modal #newMessageConnectPhone'),
-        allowRules = $('.modal #newMessageAllowRules');
+        allowRules = $('.modal #newMessageAllowRules'),
+        messageTo = $('.modal #newMessageTo');
     if(
         name.val().length > 0
         && messageText.val().length > 0
@@ -406,7 +423,8 @@ function sendNewMessageToChat() {
                 payPhone : payPhone.val(),
                 connectPhone : connectPhone.val(),
                 allowRules : 1,
-                jsSessionId : getCookie('JSESSIONID')
+                jsSessionId : getCookie('JSESSIONID'),
+                messageTo : messageTo.val() ? messageTo.val() : 0,
             };
             let uri = window.location.pathname.split('/');
             $.post( "/new/message/"+uri[(uri.length-2)]+"/"+uri[(uri.length-1)], {data : JSON.stringify(result)})

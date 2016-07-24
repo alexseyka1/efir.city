@@ -134,6 +134,9 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
                         <a href="/admin/messages" class="list-group-item" style="border-top: 1px solid rgba(52, 140, 203, 0.4) !important;">
                             <span class="glyphicon glyphicon-envelope"></span> Сообщения
                         </a>
+                        <a href="/admin/statmessages" class="list-group-item">
+                            <span class="glyphicon glyphicon-envelope"></span> Статистика сообщений
+                        </a>
                         <a href="/admin/sitesettings" class="list-group-item">
                             <span class="glyphicon glyphicon-cog"></span> Настройки сайта
                         </a>
