@@ -11,6 +11,7 @@ use Yii;
  * @property string $post_datetime
  * @property string $author_name
  * @property string $author_uid
+ * @property string $message_to
  * @property string $message_text
  * @property integer $city_id
  * @property integer $category_id
@@ -18,6 +19,7 @@ use Yii;
  * @property string $connect_phone
  * @property integer $is_paid
  * @property integer $is_published
+ * @property integer $is_sent_sms
  */
 class Messages extends \yii\db\ActiveRecord
 {
@@ -37,8 +39,8 @@ class Messages extends \yii\db\ActiveRecord
         return [
             [['post_datetime', 'author_name', 'author_uid', 'message_text', 'city_id', 'category_id', 'pay_phone', 'connect_phone'], 'required'],
             [['post_datetime'], 'safe'],
-            [['message_text'], 'string'],
-            [['city_id', 'category_id', 'is_paid', 'is_published'], 'integer'],
+            [['message_to', 'message_text'], 'string'],
+            [['city_id', 'category_id', 'is_paid', 'is_published', 'is_sent_sms'], 'integer'],
             [['author_name', 'author_uid', 'pay_phone', 'connect_phone'], 'string', 'max' => 255],
         ];
     }
@@ -53,6 +55,7 @@ class Messages extends \yii\db\ActiveRecord
             'post_datetime' => 'Post Datetime',
             'author_name' => 'Author Name',
             'author_uid' => 'Author Uid',
+            'message_to' => 'Message To',
             'message_text' => 'Message Text',
             'city_id' => 'City ID',
             'category_id' => 'Category ID',
@@ -60,6 +63,7 @@ class Messages extends \yii\db\ActiveRecord
             'connect_phone' => 'Connect Phone',
             'is_paid' => 'Is Paid',
             'is_published' => 'Is Published',
+            'is_sent_sms' => 'Is Sent Sms',
         ];
     }
 

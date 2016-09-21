@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'post_datetime',
             'author_name',
             'author_uid',
+            'message_to:ntext',
             'message_text:ntext',
             'city_id',
             'category_id',
@@ -39,6 +40,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'connect_phone',
             'is_paid',
             'is_published',
+            'is_sent_sms',
         ],
     ]) ?>
 

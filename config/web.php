@@ -52,6 +52,8 @@ $config = [
                 '' => 'site/index',
                 '<cityId:\d+>' => 'site/city',
                 '<cityId:\d+>/<categoryId:\d+>' => 'site/category',
+                '<cityId:\d+>/<categoryId:\d+>/answer/<messageId:\d+>' => 'site/category',
+                
                 'get/all/regions' => 'get/regions',
                 'get/all/cities' => 'get/cities',
                 'ajax/getMessages/<cityId:\d+>/<categoryId:\d+>/<lastMessageId:\d+>' => 'get/ajaxmessages',
@@ -59,6 +61,8 @@ $config = [
                 'ajax/getAjaxScroll/<cityId:\d+>/<categoryId:\d+>/<firstMessageId:\d+>' => 'get/infinitescroll',
                 
                 'new/message/<cityId:\d+>/<categoryId:\d+>' => 'get/newmessage',
+                'answer/message/<messageId:\d+>' => 'get/messageinfo',
+                
                 'removeAllCookies' => 'site/removecookies',
 
                 'admin' => 'admin/default/index',
@@ -75,10 +79,14 @@ $config = [
                 'admin/sitesettings' => 'admin/sitesettings/index',
                 'admin/statics' => 'admin/statics/index',
 
+                'akcii' => 'static/akcii',
                 'instructions' => 'static/instructions',
                 'cost' => 'static/cost',
                 'rules' => 'static/rules',
                 'faq' => 'static/faq',
+
+                '<city:[a-zA-Zа-яА-Я_-]+>' => 'site/rucity',
+                '<city:[a-zA-Zа-яА-Я_-]+>/<category:[a-zA-Zа-яА-Я_-]+>' => 'site/rucategory',
             ],
         ],
 

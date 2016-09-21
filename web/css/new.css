@@ -1,0 +1,17 @@
+.leftBar {
+    padding: 0 !important;
+}
+.leftBarMenu {
+    background: #535763;
+    color: #cfd1dd;
+}
+.cityImage {
+    height: 85px;
+    width: 100%;
+}
+.topMenu {
+    border-bottom: 1px solid #d6d6d8;
+}
+.mainWindow {
+
+}

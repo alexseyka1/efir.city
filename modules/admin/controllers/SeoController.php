@@ -5,7 +5,6 @@ namespace app\modules\admin\controllers;
 use Yii;
 use app\modules\admin\models\Seo;
 use app\modules\admin\models\SeoSearch;
-use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -21,29 +20,12 @@ class SeoController extends Controller
     public function behaviors()
     {
         return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login'],
-                        'allow' => true,
-                    ],
-                    [
-                        //'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                        'matchCallback' => function ($rule, $action) {
-                            return Yii::$app->user->identity->isAdmin;
-                        }
-                    ],
-                ]
-            ],
-            'verbs' => [
+            /*'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
                 ],
-            ],
+            ],*/
         ];
     }
 
@@ -53,7 +35,7 @@ class SeoController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "main";
+        $this->layout = 'main';
         $searchModel = new SeoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -70,7 +52,7 @@ class SeoController extends Controller
      */
     public function actionView($id)
     {
-        $this->layout = "main";
+        $this->layout = 'main';
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
@@ -83,7 +65,7 @@ class SeoController extends Controller
      */
     public function actionCreate()
     {
-        $this->layout = "main";
+        $this->layout = 'main';
         $model = new Seo();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -103,7 +85,7 @@ class SeoController extends Controller
      */
     public function actionUpdate($id)
     {
-        $this->layout = "main";
+        $this->layout = 'main';
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -123,6 +105,7 @@ class SeoController extends Controller
      */
     public function actionDelete($id)
     {
+        $this->layout = 'main';
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
@@ -137,6 +120,7 @@ class SeoController extends Controller
      */
     protected function findModel($id)
     {
+        $this->layout = 'main';
         if (($model = Seo::findOne($id)) !== null) {
             return $model;
         } else {

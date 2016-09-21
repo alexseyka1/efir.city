@@ -18,8 +18,8 @@ class MessagesSearch extends Messages
     public function rules()
     {
         return [
-            [['id', 'city_id', 'category_id', 'is_paid', 'is_published'], 'integer'],
-            [['post_datetime', 'author_name', 'author_uid', 'message_text', 'pay_phone', 'connect_phone'], 'safe'],
+            [['id', 'city_id', 'category_id', 'is_paid', 'is_published', 'is_sent_sms'], 'integer'],
+            [['post_datetime', 'author_name', 'author_uid', 'message_to', 'message_text', 'pay_phone', 'connect_phone'], 'safe'],
         ];
     }
 
@@ -65,10 +65,12 @@ class MessagesSearch extends Messages
             'category_id' => $this->category_id,
             'is_paid' => $this->is_paid,
             'is_published' => $this->is_published,
+            'is_sent_sms' => $this->is_sent_sms,
         ]);
 
         $query->andFilterWhere(['like', 'author_name', $this->author_name])
             ->andFilterWhere(['like', 'author_uid', $this->author_uid])
+            ->andFilterWhere(['like', 'message_to', $this->message_to])
             ->andFilterWhere(['like', 'message_text', $this->message_text])
             ->andFilterWhere(['like', 'pay_phone', $this->pay_phone])
             ->andFilterWhere(['like', 'connect_phone', $this->connect_phone]);

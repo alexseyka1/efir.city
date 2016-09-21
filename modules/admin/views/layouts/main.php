@@ -16,6 +16,8 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 	<link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/semantic/semantic.min.css">
+        <link rel="stylesheet" href="/css/admin.css">
         <style type="text/css">
             html, body {
                 font-family: Arial;
@@ -72,16 +74,32 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
                 border: none;
                 border-bottom: 1px solid rgba(52, 140, 203, 0.4) !important;
             }
-            hr {
-                background: #607d8b;
-                margin-top: 15px;
-                margin-bottom: 15px;
-                border: 0;
-                border-top: 4px dashed #fff;
+            .ui.inverted.menu .active.item ,.ui.inverted.menu .active.item:hover {
+                background: #009688;
+            }
+            .ui.inverted.vertical.menu .item .menu .active.item, .ui.inverted.vertical.menu .item .menu .active.item:hover {
+                background: #009688;
+            }
+            .ui.segment.chatWindow {
+                padding:0;
+                border-radius: 0px;
+            }
+            .ui.fixed.menu+.ui.grid {
+                paddint-top: 1rem;
+            }
+            @media only screen and (min-width: 1200px) {
+                .ui.main.grid {
+                    left: 120px;
+                    width: 60vw;
+                }
+            }
+            div.pusher {
+                overflow-x: auto;
+                overflow-y: hidden;
             }
         </style>
     </head>
-    <body class="fuelux">
+    <body class="fuelux" data-page="dashboard">
         <div class="modal fade" id="modal" tabindex="-1" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -100,7 +118,137 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-    <div class="container-fluid">
+        <div class="ui sidebar vertical inverted menu">
+            <a class="item" href="/user/security/logout">
+                <h4 class="ui grey header"><img class="ui avatar image" src="http://semantic-ui.com/images/avatar/large/elliot.jpg"><?=\Yii::$app->user->identity->username;?></h4>
+                <p>Выйти из админки</p>
+            </a>
+            <a href="/admin" class="item">
+                <i class="home icon"></i> Главная
+            </a>
+
+            <div class="item">
+                <div class="header">Редактирование</div>
+                <div class="menu">
+                    <a href="/admin/country" class="item">
+                        <i class="world icon"></i> Редактирование стран
+                    </a>
+                    <a href="/admin/region" class="item">
+                        <i class="world icon"></i> Редактирование регионов
+                    </a>
+                    <a href="/admin/city" class="item">
+                        <i class="world icon"></i> Редактирование городов
+                    </a>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header">Категории</div>
+                <div class="menu">
+                    <a href="/admin/category" class="item">
+                        <i class="list layout icon"></i> Редактирование категорий
+                    </a>
+                    <a href="/admin/categorydefault" class="item">
+                        <i class="list layout icon"></i> Базовые категории
+                    </a>
+                </div>
+            </div>
+
+            <a href="/admin/seo" class="item">
+                <i class="line chart icon"></i> SEO
+            </a>
+            <a href="/admin/statics" class="item">
+                <i class="file outline icon"></i> Статические страницы
+            </a>
+
+            <div class="item">
+                <div class="header">Сообщения</div>
+                <div class="menu">
+                    <a href="/admin/messages" class="item"><i class="mail outline icon"></i> Сообщения</a>
+                    <a href="/admin/statmessages" class="item"><i class="mail outline icon"></i> Статистика сообщений</a>
+                </div>
+            </div>
+
+            <a href="/admin/sitesettings" class="item">
+                <i class="setting icon"></i> Настройки сайта
+            </a>
+        </div>
+
+        <div class="pusher">
+            <div class="ui grid container">
+                <!-- Non-responsive main left menu -->
+                <div class="ui left fixed vertical inverted menu">
+                    <a class="item" href="/user/security/logout">
+                        <h4 class="ui grey header"><img class="ui avatar image" src="http://semantic-ui.com/images/avatar/large/elliot.jpg"><?=\Yii::$app->user->identity->username;?></h4>
+                        <p>Выйти из админки</p>
+                    </a>
+                    <a href="/admin" class="item">
+                        <i class="home icon"></i> Главная
+                    </a>
+                    
+                    <div class="item">
+                        <div class="header">Редактирование</div>
+                        <div class="menu">
+                            <a href="/admin/country" class="item">
+                                <i class="world icon"></i> Редактирование стран
+                            </a>
+                            <a href="/admin/region" class="item">
+                                <i class="world icon"></i> Редактирование регионов
+                            </a>
+                            <a href="/admin/city" class="item">
+                                <i class="world icon"></i> Редактирование городов
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <div class="header">Категории</div>
+                        <div class="menu">
+                            <a href="/admin/category" class="item">
+                                <i class="list layout icon"></i> Редактирование категорий
+                            </a>
+                            <a href="/admin/categorydefault" class="item">
+                                <i class="list layout icon"></i> Базовые категории
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <a href="/admin/seo" class="item">
+                        <i class="line chart icon"></i> SEO
+                    </a>
+                    <a href="/admin/statics" class="item">
+                        <i class="file outline icon"></i> Статические страницы
+                    </a>
+                    
+                    <div class="item">
+                        <div class="header">Сообщения</div>
+                        <div class="menu">
+                            <a href="/admin/messages" class="item"><i class="mail outline icon"></i> Сообщения</a>
+                            <a href="/admin/statmessages" class="item"><i class="mail outline icon"></i> Статистика сообщений</a>
+                        </div>
+                    </div>
+                    
+                    <a href="/admin/sitesettings" class="item">
+                        <i class="setting icon"></i> Настройки сайта
+                    </a>
+                </div>
+
+                <div class="ui main grid" style="margin-top: 30px;">
+                    <div class="ui fixed inverted main menu">
+                        <div class="ui container">
+                            <a class="launch icon item sidebar-toggle">
+                                <i class="sidebar icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <?=$content;?>
+                </div>
+
+            </div>
+        </div>
+
+        
+    <!--<div class="container-fluid">
           <div class="row" id="bodyContent">
                 <div class="col-sm-2 col-md-2 col-lg-2 leftBar">
                     <div class="list-group">
@@ -143,24 +291,28 @@ $url = explode("/", $_SERVER['REQUEST_URI']);
                     </div>
                 </div>
                 <div class="col-sm-10 col-md-10 col-lg-10 mainWindow" style="overflow: auto;">
-                    <?=$content;?>
+                    <?/*=$content;*/?>
                 </div>
           </div>
-    </div>
-
+    </div>-->
+    
     </body>
     <footer>
         <script src="/js/jquery.min.js"></script>
 	    <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/semantic/semantic.min.js"></script>
     </footer>
 </html>
 
 <script>
     $(document).ready(function(){
-        $('.leftBar .list-group .list-group-item').each(function(i, elem){
+        $('.ui.left.fixed.vertical.inverted.menu .item').each(function(i, elem){
             if($(elem).attr('href') == window.location.pathname.replace('efir.city','')){
                 $(elem).addClass('active');
             }
+        });
+        $("a.sidebar-toggle").click(function() {
+            $('.ui.sidebar').sidebar('toggle');
         });
     });
 </script>

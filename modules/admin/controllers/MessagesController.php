@@ -56,6 +56,11 @@ class MessagesController extends Controller
     {
         $this->layout = "main";
         $searchModel = new MessagesSearch();
+        if(empty(Yii::$app->request->queryParams)){
+            Yii::$app->request->queryParams = [
+                'sort' => '-id',
+            ];
+        }
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [

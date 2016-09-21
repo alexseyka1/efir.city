@@ -2,7 +2,8 @@
 var eventSource,
     okPayPhone =0,
     okConnectPhone=0,
-    isLoaded = false;
+    isLoaded = false,
+    isAnswering = false;
 
 if(!getCookie('JSESSIONID') || getCookie('JSESSIONID') === null){
 	setCookie('JSESSIONID', guid());
@@ -14,8 +15,6 @@ window.onunload = function(){
 window.addEventListener('popstate', function(e){
   window.location.reload();
 }, false);
-
-
 
 $(document).ready(function(){
     var url = window.location.pathname;
@@ -31,6 +30,80 @@ $(document).ready(function(){
                 let name = localStorage.getItem('name') ? localStorage.getItem('name') : '';
                 let payPhone = localStorage.getItem('payPhone') ? localStorage.getItem('payPhone') : '';
                 let connectPhone = localStorage.getItem('connectPhone') ? localStorage.getItem('connectPhone') : '';
+                
+                if($('input#answerMessageId[type=hidden][role=var]').length > 0) {
+                    isAnswering = true;
+                    $('button#bottomButtonWrite').css('display','none');
+                    $.post('/answer/message/' + $('input#answerMessageId[type=hidden][role=var]').val())
+                        .done(function (data) {
+                            if (data) {
+                                let dat = JSON.parse(data),
+                                    datetime = dat.post_datetime.split(' '),
+                                    date = datetime[0],
+                                    time = datetime[1];
+                                console.log(dat);
+                                let answerString = `
+                                    <div class="wizard" data-initialize="wizard" id="myWizard">
+                                        <div class="steps-container">
+                                            <ul class="steps">
+                                                <li data-step="1" data-name="country" class="active">
+                                                    <span class="badge">1 шаг</span>Написание ответа
+                                                    <span class="chevron"></span>
+                                                </li>
+                                                <li data-step="2" data-name="region">
+                                                    <span class="badge">2 шаг</span>Выбор способа оплаты
+                                                    <span class="chevron"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="step-content">
+                                            <div class="step-pane active sample-pane alert" data-step="1">
+                                                <div class="row message">
+                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="display: flex;align-items: center;justify-content: center;">
+                                                        <span class="time">
+                                                            <div class="timeDate">` + date + `</div>
+                                                            <div class="timetime">` + time + `</div>
+                                                         </span>
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                        <p class="messageTitle">Алексей2</p>
+                                                        <p class="messageText">321123</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row message">
+                                                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="display: flex;align-items: center;justify-content: center;">
+                                                        <span class="time">
+                                                            <div class="timeDate">&nbsp;</div>
+                                                            <div class="timetime">Пример ответа</div>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                                        <p class="messageTitle">&nbsp;</p>
+                                                        <p class="messageText">Привет! Меня заинтересовало твое сообщение.<br>Можем обсудить - 8 920 823 93 12</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="margin-top: 30px;">
+                                                    <p>Текст ответного сообщения</p>
+                                                    <p><textarea style="width: 100%; height: 100px;"/></p>
+                                                    <button class="btn btn-info btn-block" onclick="$('#myWizard').wizard('next');">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                                                </div>
+                                            </div>
+                                            <div class="step-pane sample-pane sample-pane alert" data-step="2">
+                                                <h2>Теперь выберите ваш регион из доступных ниже:</h2>
+                                                <p>
+                                                    <select id="selectRegion" class="form-control">
+                                                        <option value="-1">...</option>
+                                                    </select>
+                                                </p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div> 
+                                `;
+                                $('div.windowChat').html(answerString);
+                            }
+                        });
+                }
 
                 $('.modal #newMessageName').val(name);
                 $('.modal #newMessagePayPhone').val(payPhone);
@@ -38,10 +111,23 @@ $(document).ready(function(){
             });
             chat();
             break;
-        default: if(eventSource) { eventSource.close();} break;
+        //case /\d+\/\d+/.test(url):
+        default:
+        //case /^[A-Za-zА-Яа-яЁё]+\/[A-Za-zА-Яа-яЁё]+$/.test(url):
+            $(document).ready(function(){
+                let name = localStorage.getItem('name') ? localStorage.getItem('name') : '';
+                let payPhone = localStorage.getItem('payPhone') ? localStorage.getItem('payPhone') : '';
+                let connectPhone = localStorage.getItem('connectPhone') ? localStorage.getItem('connectPhone') : '';
+
+                $('.modal #newMessageName').val(name);
+                $('.modal #newMessagePayPhone').val(payPhone);
+                $('.modal #newMessageConnectPhone').val(connectPhone);
+            });
+            chat();
+            break;
+        //default: if(eventSource) { eventSource.close();} break;
     }
 });
-
 
 function guid() {
   function s4() {
@@ -148,7 +234,10 @@ function chat(){
     $('div.col-md-3.centerTab').click(function(){
         let uri = $(this).attr('data-tab');
         if(uri.length > 0){
-            window.location = uri;
+            var cityId = $('input#cityId[role=var]').val();
+            var categoryId = $('input#categoryId[role=var]').val();
+            //window.location = uri;
+            window.location = '/' + cityId + '/' + uri;
         }
     });
     $("#bottomButtonWrite").css('width',$('.centerWindowDiv').width());
@@ -156,60 +245,63 @@ function chat(){
         $('.modal').modal('show');
     });
     var uri = window.location.pathname.split('/');
-    if(uri && uri[(uri.length)-1] && /\d+/.test(uri[(uri.length-1)]) && uri[(uri.length)-2] && /\d+/.test(uri[(uri.length-2)])) {
-        var cityId = uri[(uri.length - 2)];
-        var categoryId = uri[(uri.length - 1)];
-
+    //if(uri && uri[(uri.length)-1] && /\d+/.test(uri[(uri.length-1)]) && uri[(uri.length)-2] && /\d+/.test(uri[(uri.length-2)])) {
+        //var cityId = uri[(uri.length - 2)];
+        //var categoryId = uri[(uri.length - 1)];
+        var cityId = $('input#cityId[role=var]').val();
+        var categoryId = $('input#categoryId[role=var]').val();
+        
+    if(!isAnswering) {
         getMessages(cityId, categoryId)
             .then(response => {
-                if(response !== 'none') {
+                if (response !== 'none') {
                     let result = JSON.parse(response);
                     return result;
-                }else{
+                } else {
                     return false;
                 }
             })
             .then(result => {
                 if (result && result !== false && typeof result == 'object') {
                     let newMessagesString = '';
-                    for(let message in result){
+                    for (let message in result) {
                         let datetime = new Date(),
                             messageDatetime = result[message].post_datetime.split(' '),
                             messageTo = result[message].to,
                             messageToPhone = result[message].toPhone;
-                            if(datetime.getMonth().length == 1) {
-                                var dateString = datetime.getFullYear()
-                                    + '-' + (datetime.getMonth()+1)
-                                    + '-' + datetime.getDate();
-                            }else{
-                                var dateString = datetime.getFullYear()
-                                    + '-0' + (datetime.getMonth()+1)
-                                    + '-' + datetime.getDate();
-                            }
+                        if (datetime.getMonth().length == 1) {
+                            var dateString = datetime.getFullYear()
+                                + '-' + (datetime.getMonth() + 1)
+                                + '-' + datetime.getDate();
+                        } else {
+                            var dateString = datetime.getFullYear()
+                                + '-0' + (datetime.getMonth() + 1)
+                                + '-' + datetime.getDate();
+                        }
                         messageDatetime[0] = messageDatetime[0].replace(dateString, "Сегодня");
-                        
+
                         newMessagesString += `
-                            <div class="row message" data-id="`+result[message].id+`">
+                            <div class="row message" data-id="` + result[message].id + `">
                                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="display: flex;align-items: center;justify-content: center;">
                                     <span class="time">
-                                        <div class="timeDate">`+messageDatetime[0]+`</div>
-                                        <div class="timetime">`+messageDatetime[1]+`</div>
+                                        <div class="timeDate">` + messageDatetime[0] + `</div>
+                                        <div class="timetime">` + messageDatetime[1] + `</div>
                                      </span>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                                    <p class="messageTitle">`+result[message].author_name+`</p>
-                                    <p class="messageText">`+result[message].message_text+`</p>
+                                    <p class="messageTitle">` + result[message].author_name + `</p>
+                                    <p class="messageText">` + result[message].message_text + `</p>
                                 </div>
                                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 answerBlock">
                                     <div class="answerMessage">
-                                        <a style="color:#3670b0;cursor:pointer;" class="buttonAnswerToMessage" data-to="`+result[message].id+`" data-toName="`+result[message].author_name+`">Ответить</a>    
+                                        <a href="/`+$('input#cityId').val()+`/`+$('input#categoryId').val()+`/answer/` + result[message].id + `" style="color:#3670b0;cursor:pointer;" class="buttonAnswerToMessage" target="_blank" data-to="` + result[message].id + `" data-toName="` + result[message].author_name + `">Ответить</a>    
                                     </div>
                                 </div>
                                 
                             </div>
                         `;
-                        localStorage.setItem('lastMessageId',result[message].id);
-                        if(isLoaded) {
+                        localStorage.setItem('lastMessageId', result[message].id);
+                        if (isLoaded) {
                             if (messageTo == getCookie('JSESSIONID') || messageToPhone == localStorage.getItem('connectPhone')) {
                                 noty({
                                     text: '<div class="trayMessage"><p>Вам ответили!</p><p>' + result[message].author_name + ':</p><p>' + result[message].message_text + '</p></div>',
@@ -222,37 +314,24 @@ function chat(){
                             }
                         }
                     }
-                    if($('div.windowChat').text().trim() == "Здесь еще пусто! Напиши сообщение, будь первым!"){
+                    if ($('div.windowChat').text().trim() == "Здесь еще пусто! Напиши сообщение, будь первым!") {
                         $('div.windowChat').last().html('');
                     }
-                    if(isLoaded) {
+                    if (isLoaded) {
                         document.getElementById('newMessageSound').play();
                     }
                     $('div.windowChat').last().append(newMessagesString);
-                    $('a.buttonAnswerToMessage').click(function(){
-                        let to = $(this).attr('data-to'),
-                            toName = $(this).attr('data-toName');
-                        if(to){
-                            $('.modal textarea#newMessageText').val(toName+', ');
-                            $('.modal input#newMessageTo').val(to);
-                            $('.modal').modal('show');
-                            setTimeout(function() {
-                                $('.modal textarea#newMessageText').focus();
-                            }, 500);
-                        }else{
-                            console.log('...');
-                        }
-                    });
-                    $('div.windowChat').scrollTo($('div.windowChat div').last());
+                    //$('div.windowChat').scrollTo($('div.windowChat div').last());
                     isLoaded = true;
                 }
             })
             .then(result => {
-                setTimeout(function() {
+                setTimeout(function () {
                     chat();
                 }, 1000);
             });
     }
+    //}
 }
 function onAjaxScroll(e){
     let fromTop = $(this).scrollTop(),
@@ -266,9 +345,10 @@ function onAjaxScroll(e){
         +nowDate.getSeconds() != localStorage.getItem('lastAjaxScroll')){
         $(this).unbind('scroll');
 
-        let uri = window.location.pathname.split('/'),
-            cityId = uri[(uri.length-2)],
-            categoryId = uri[(uri.length-1)];
+        /*let cityId = uri[(uri.length-2)],
+            categoryId = uri[(uri.length-1)];*/
+        let cityId = $('input#cityId[role=var]').val();
+        let categoryId = $('input#categoryId[role=var]').val();
         
         getAjaxScroll(cityId, categoryId)
             .then(response => {
@@ -321,7 +401,7 @@ function onAjaxScroll(e){
                         }
                     };
                     $('div.windowChat').first().prepend(newMessagesString);
-                    $('div.windowChat').scrollTo($('div.windowChat div.row').eq(10), 0);
+                    //$('div.windowChat').scrollTo($('div.windowChat div.row').eq(10), 0);
 
                     let datetime = new Date();
                     localStorage.setItem('lastAjaxScroll',
@@ -426,8 +506,10 @@ function sendNewMessageToChat() {
                 jsSessionId : getCookie('JSESSIONID'),
                 messageTo : messageTo.val() ? messageTo.val() : 0,
             };
-            let uri = window.location.pathname.split('/');
-            $.post( "/new/message/"+uri[(uri.length-2)]+"/"+uri[(uri.length-1)], {data : JSON.stringify(result)})
+            //let uri = window.location.pathname.split('/');
+            let cityId = $('input#cityId[role=var]').val();
+            let categoryId = $('input#categoryId[role=var]').val();
+            $.post( "/new/message/"+cityId+"/"+categoryId, {data : JSON.stringify(result)})
                 .done(function( data ) {
                     if(data == 1){
                         localStorage.setItem('name',name.val());
@@ -463,7 +545,9 @@ $('#pageInstruction').click(function(){
                 history.pushState('', '', '/instructions');
                 $('div#mainContentWindow').html(data);
                 $('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
-                    if($(elem).attr('data-url') == window.location.pathname){
+                    var cityId = $('input#cityId[role=var]').val();
+                    var categoryId = $('input#categoryId[role=var]').val();
+                    if($(elem).attr('data-url') == window.location.pathname || $(elem).attr('data-url') == '/'+cityId+'/'+categoryId){
                         $(elem).removeClass('rightBarBlockHeaderNonActive').addClass('rightBarBlockHeaderActive');
                     }else{
                         $(elem).removeClass('rightBarBlockHeaderActive').addClass('rightBarBlockHeaderNonActive');
@@ -479,7 +563,9 @@ $('#pageCost').click(function(){
                 history.pushState('', '', '/cost');
                 $('div#mainContentWindow').html(data);
                 $('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
-                    if($(elem).attr('data-url') == window.location.pathname){
+                    var cityId = $('input#cityId[role=var]').val();
+                    var categoryId = $('input#categoryId[role=var]').val();
+                    if($(elem).attr('data-url') == window.location.pathname || $(elem).attr('data-url') == '/'+cityId+'/'+categoryId){
                         $(elem).removeClass('rightBarBlockHeaderNonActive').addClass('rightBarBlockHeaderActive');
                     }else{
                         $(elem).removeClass('rightBarBlockHeaderActive').addClass('rightBarBlockHeaderNonActive');
@@ -495,7 +581,9 @@ $('#pageRules').click(function(){
                 history.pushState('', '', '/rules');
                 $('div#mainContentWindow').html(data);
                 $('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
-                    if($(elem).attr('data-url') == window.location.pathname){
+                    var cityId = $('input#cityId[role=var]').val();
+                    var categoryId = $('input#categoryId[role=var]').val();
+                    if($(elem).attr('data-url') == window.location.pathname || $(elem).attr('data-url') == '/'+cityId+'/'+categoryId){
                         $(elem).removeClass('rightBarBlockHeaderNonActive').addClass('rightBarBlockHeaderActive');
                     }else{
                         $(elem).removeClass('rightBarBlockHeaderActive').addClass('rightBarBlockHeaderNonActive');
@@ -511,7 +599,9 @@ $('#pageFaq').click(function(){
                 history.pushState('', '', '/faq');
                 $('div#mainContentWindow').html(data);
                 $('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
-                    if($(elem).attr('data-url') == window.location.pathname){
+                    var cityId = $('input#cityId[role=var]').val();
+                    var categoryId = $('input#categoryId[role=var]').val();
+                    if($(elem).attr('data-url') == window.location.pathname || $(elem).attr('data-url') == '/'+cityId+'/'+categoryId){
                         $(elem).removeClass('rightBarBlockHeaderNonActive').addClass('rightBarBlockHeaderActive');
                     }else{
                         $(elem).removeClass('rightBarBlockHeaderActive').addClass('rightBarBlockHeaderNonActive');
@@ -520,26 +610,31 @@ $('#pageFaq').click(function(){
             }
         });
 });
-$('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
-    if($(elem).attr('data-url') == window.location.pathname){
+
+/*$('.row.leftBarBlock.rightBarBlock .leftBarBlockHeader').each(function(i, elem){
+    var cityId = $('input#cityId[role=var]').val();
+    var categoryId = $('input#categoryId[role=var]').val();
+    if($(elem).attr('data-url') == window.location.pathname || $(elem).attr('data-url') == '/'+cityId+'/'+categoryId){
         $(elem).removeClass('rightBarBlockHeaderNonActive').addClass('rightBarBlockHeaderActive');
     }
-});
+});*/
 
-$('.centerTab.col-md-3').each(function(i, elem){
+$('#efirsNav li').each(function(i, elem){
     var uri = window.location.pathname.split('/');
-    if($(elem).attr('data-tab') == uri[(uri.length-1)]){
-        $(elem).addClass('centerTabActive');
+    var cityId = $('input#cityId[role=var]').val();
+    var categoryId = $('input#categoryId[role=var]').val();
+    if($(elem).attr('data-tab') == uri[(uri.length-1)] || $(elem).attr('data-tab') == categoryId){
+        $(elem).addClass('active');
     }else{
-        $(elem).removeClass('centerTabActive');
+        $(elem).removeClass('active');
     }
 });
 
-$('div.socialBlock').click(function(){
+/*$('div.socialBlock').click(function(){
     if($(this).attr('data-url').length > 0){
         window.location = $(this).attr('data-url');
     }
-});
+});*/
 
 $('button#buttonBack').click(function(){
     window.location = '/removeAllCookies';

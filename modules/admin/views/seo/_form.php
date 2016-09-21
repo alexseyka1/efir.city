@@ -14,11 +14,21 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'rus_url')->textInput(['maxlength' => true]) ?>
+
     <?= $form->field($model, 'title')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'meta')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'title_text')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'html_1_header')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'html_1_text')->textarea(['rows' => 6]) ?>
+
+    <?= $form->field($model, 'html_2_header')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'html_2_text')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

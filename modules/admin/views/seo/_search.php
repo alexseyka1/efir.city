@@ -19,11 +19,21 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'url') ?>
 
+    <?= $form->field($model, 'rus_url') ?>
+
     <?= $form->field($model, 'title') ?>
 
     <?= $form->field($model, 'meta') ?>
 
-    <?= $form->field($model, 'title_text') ?>
+    <?php // echo $form->field($model, 'title_text') ?>
+
+    <?php // echo $form->field($model, 'html_1_header') ?>
+
+    <?php // echo $form->field($model, 'html_1_text') ?>
+
+    <?php // echo $form->field($model, 'html_2_header') ?>
+
+    <?php // echo $form->field($model, 'html_2_text') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\modules\admin\models\SeoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Seos';
+$this->title = 'ЧПУ и URL для SEO';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="seo-index">
@@ -16,19 +16,24 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Seo', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать SEO-URL', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
+            /*'filterModel' => $searchModel,*/
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
             'url:url',
-            'title:ntext',
+            'rus_url:url',
+            /*'title:ntext',
             'meta:ntext',
-            'title_text:ntext',
+             'title_text:ntext',
+             'html_1_header',
+             'html_1_text:ntext',
+             'html_2_header',
+             'html_2_text:ntext',*/
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

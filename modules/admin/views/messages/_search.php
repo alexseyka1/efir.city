@@ -23,7 +23,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'author_uid') ?>
 
-    <?= $form->field($model, 'message_text') ?>
+    <?= $form->field($model, 'message_to') ?>
+
+    <?php // echo $form->field($model, 'message_text') ?>
 
     <?php // echo $form->field($model, 'city_id') ?>
 
@@ -36,6 +38,8 @@ use yii\widgets\ActiveForm;
     <?php // echo $form->field($model, 'is_paid') ?>
 
     <?php // echo $form->field($model, 'is_published') ?>
+
+    <?php // echo $form->field($model, 'is_sent_sms') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

@@ -22,164 +22,179 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-    <link href="/fuelux/css/fuelux.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/fuelux/css/fuelux.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <? if(!empty($this->context->categoryId) && in_array($this->context->categoryId, [2,3,4,5])) { ?>
+        <link rel="stylesheet" href="/css/jquery.custom-scroll<?=$this->context->categoryId;?>.css">
+    <? }else{ ?>
+        <link rel="stylesheet" href="/css/jquery.custom-scroll.css">
+    <? } ?>
 </head>
-<body class="fuelux ">
+<body>
+<div id="loaderDiv" style="
+    display: flex !important;
+    opacity: 1 !important;
+    position: fixed !important;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999 !important;
+    align-content: center !important;
+    vertical-align: middle !important;">
+
+    <div style="
+    display: block !important;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    //margin-left: calc(35vw);
+    width:100% !important;
+    text-align: center !important;
+    color: white;
+    font-size: 2rem !important;
+    font-weight: 100 !important;
+">Загрузка...</div>
+</div>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="menu-bg"></div>
+<header class="header">
+    <div class="menu-button"></div>
+    <div class="logo">
+        <a href="/">
+            <img src="/img/logo1.jpg">
+            <span>Городской эфир</span>
+            <?=!empty($this->context->city) ? $this->context->city : '';?>
+        </a>
+    </div>
+    <div class="city-select">
+        <?=!empty($this->context->city) ? $this->context->city : 'Выбрать город';?>
+        <span></span>
+    </div>
+    <div class="weather">
+        <!--<img src="/img/weather.jpg"> +18-->
+        <?php
+            if(!empty($this->context->weather)){
+                $image = str_replace('22x22', '48x48', $this->context->weather['image']);
+                echo '<img src="'.$image.'">'.$this->context->weather['temp'];
+            }
+        ?>
+    </div>
+    <div class="clear"></div>
+</header>
+<div class="main-content">
     <?php
-    /*NavBar::begin([
-        'brandLabel' => 'Efir.cityt',
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
-        ],
-    ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post', ['class' => 'navbar-form'])
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
-    ]);
-    NavBar::end();*/
+        if(!empty($this->context->categoryId)){
+            if($this->context->categoryId == 1){
+                echo '<div class="board news">';
+            }elseif($this->context->categoryId == 3){
+                echo '<div class="board actions">';
+            }elseif($this->context->categoryId == 4){
+                echo '<div class="board relax">';
+            }elseif($this->context->categoryId == 5){
+                echo '<div class="board contact">';
+            }else{
+                echo '<div class="board">';
+            }   
+        }else{
+            echo '<div class="board">';
+        }
     ?>
+        <?=$content;?>
+    </div>
+    <aside class="right-side">
+        <div class="top-text">
+<!--            <p>Это текстовое сообщение имеет 300 символов с пробелами. Это текстовое сообщение имеет 300 символов с пробелами. Это текстовое сообщение имеет 300 символов с пробелами. Это текстовое сообщение имеет 300 символов с пробелами. Это текстовое сообщение имеет 300 символов с пробелами. Даже чуточку больше.</p>-->
+            <? if(!empty($this->context->seoPage)){;?><?=!empty($this->context->seoPage['html_1_header']) ? $this->context->seoPage['html_1_header'] : $this->context->settings['html_1_header'];?>
+            <?=!empty($this->context->seoPage['html_1_text']) ? $this->context->seoPage['html_1_text'] : $this->context->settings['html_1_text'];?>
+            <? } ?>
+        </div>
+        <div class="banner">
 
-    <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            'homeLink' => ['label' => 'Главная',
-                'url' => Yii::$app->getHomeUrl()],
-        ]) ?>
-        <div class="container mainWindow">
-
-            <!--    Шапка - логотип сайта   -->
-
-            <div class="row">
-                <div class="col-md-4">&nbsp;</div>
-                <div class="col-md-4 logoHeader" onclick="window.location='/'">
-                    <?=$this->context->settings['site_name'];?>
-                </div>
-                <div class="col-md-4">&nbsp;</div>
+        </div>
+    </aside>
+    <div class="clear"></div>
+</div>
+<div class="left-side">
+    <div class="after"></div>
+    <img src="/img/image.jpg" class="image">
+    <div class="city-select"><?=!empty($this->context->city) ? $this->context->city : 'Выбрать город';?> <span></span></div>
+    <nav class="left-menu">
+        <ul>
+            <li><img src="/img/icon1.png"><a href="/akcii">Акции и конкурсы</a></li>
+            <li><img src="/img/icon2.png"><a href="/cost">Стоимость</a></li>
+            <li><img src="/img/icon3.png"><a href="/instructions">Инструкция</a></li>
+            <li><img src="/img/icon4.png"><a href="/rules">Правила сервиса</a></li>
+            <li><img src="/img/icon5.png"><a href="/faq">Вопросы и ответы</a></li>
+        </ul>
+    </nav>
+    <div class="social">
+        <span>Мы в соц.сетях</span>
+        <div class="images">
+            <a href="#"><img src="/img/vk.png"></a>
+            <a href="#"><img src="/img/fb.png"></a>
+            <a href="#"><img src="/img/ok.png"></a>
+        </div>
+    </div>
+</div>
+<div class="popupbg"></div>
+<div class="popup">
+    <div class="close"><img src="/img/close.jpg"></div>
+    <div class="content">
+        <div class="top">
+            Выберите ваш город
+        </div>
+        <div class="select" id="selectedRegion">Регион<span></span></div>
+        <div class="selects">
+            <div class="close-btn"></div>
+            <!--<input type="text"><input type="submit">-->
+            <div id="selects" class="sss">
+                <? if(!empty($this->context->allRegions)){
+                    foreach ($this->context->allRegions as $allRegion) {
+                        echo "<a class='regionsLinks' data-id='".$allRegion['region_id']."'>".$allRegion['name']."</a>";
+                   } 
+                }?>
             </div>
-
-            <div class="row">
-                <div class="col-md-12 titleService">
-                    <? if(!empty($this->context->seoPage)){ echo $this->context->seoPage['title'];}else{ ?>
-                        Общение в <?=$this->context->city;?><small style="color:grey">, <?=$this->context->region;?>, <?=$this->context->country;?></small>
-                    <? } ?>
-                </div>
+        </div>
+        <div class="select disabled" id="selectedCity">Город<span></span></div>
+        <div class="selects second">
+            <div class="close-btn"></div>
+            <!--<input type="text"><input type="submit">-->
+            <div id="selects2" class="sss">
             </div>
-
-            <div class="row">
-                <div class="col-md-12 threeTitleText">
-                    <?
-                        $title_text = !empty($this->context->seoPage) ? $this->context->seoPage['title_text'] : $this->context->settings['default_title_text'];
-                        $title_text = str_replace('{city}',$this->context->city,$title_text);
-                        $title_text = str_replace('{category}',$this->context->categoryInfo['category_name'],$title_text);
-                    echo $title_text;
-                    ?>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-md-2">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding:0;">
-                            <button class="btn btn-primary btn-block buttonBack" id="buttonBack">
-                                <span class="glyphicon glyphicon-chevron-left"></span> Выбрать другой город
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row leftBarBlock">
-                        <div class="row leftBarBlockHeader"><?=$this->context->settings['html_1_header'];?></div>
-                        <div class="row leftBarText"><?=$this->context->settings['html_1_text'];?></div>
-                    </div>
-                    <div class="row leftBarBlock">
-                        <div class="row leftBarBlockHeader"><?=$this->context->settings['html_2_header'];?></div>
-                        <div class="row leftBarText"><?=$this->context->settings['html_2_text'];?></div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row centerWindowDiv" id="mainContentWindow">
-                        <?= $content ?>
-                    </div>
-                    <button class="btn btn-block btn-default bottomButtonWrite" id="bottomButtonWrite">
-                        НАПИСАТЬ СООБЩЕНИЕ
-                    </button>
-                </div>
-                <div class="col-md-2">
-                    <div class="row leftBarBlock rightBarBlock">
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive" id="pageInstruction" data-url="/instructions">Инструкция</div>
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive" id="pageCost" data-url="/cost">Стоимость</div>
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive" id="pageRules" data-url="/rules">Правила сервиса</div>
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive" id="pageFaq" data-url="/faq">Вопросы и ответы</div>
-                        <!--<div class="row leftBarBlockHeader rightBarBlockHeaderNonActive">Еще что-нибудь</div>
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive">Еще что-нибудь</div>
-                        <div class="row leftBarBlockHeader rightBarBlockHeaderNonActive">И еще что-нибудь</div>-->
-                    </div>
-                    <div class="row rightBarBlock" style="text-align: center">
-                        <h3 style="color:#426ca8">Мы в Соц.сетях</h3>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 socialBlock socialBlockVk" data-url="<?=$this->context->settings['vk'];?>">
-                            <div class="socialIcon">&nbsp;</div>
-                            <span class="socialBlockTextVk">В</span>
-                            <div style="margin: 0px; padding:0px;font-size: 10px;">Вконтакте</div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 socialBlock socialBlockFb" data-url="<?=$this->context->settings['facebook'];?>">
-                            <div class="socialIcon">&nbsp;</div>
-                            <span class="socialBlockTextFb">f</span>
-                            <div style="margin: 0px; padding:0px;font-size: 10px;">Facebook</div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 socialBlock socialBlockOk" data-url="<?=$this->context->settings['ok'];?>">
-                            <div class="socialIcon">&nbsp;</div>
-                            <span class="socialBlockTextOk">Ok</span>
-                            <div style="margin: 0px; padding:0px;font-size: 10px;">Ок</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        </div>
+        <button disabled="disabled" id="goToChatButton">Выбрать</button>
+        <div class="list">
+            <?=\app\models\Category::renderAllCities();?>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
 
-<footer class="footer" style="padding-bottom: 100px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <p class="pull-left">
-                    <?=!empty($this->context->settings['layout_footer']) ? $this->context->settings['layout_footer'] : 'Efir.city';?>
-                </p>
-            </div>
-            <div class="col-md-3">
-                <p class="pull-left">&copy; <a href="http://vk.com/alexseyka1" target="_blank">alexseyka1</a> <?= date('Y') ?></p>
-            </div>
-        </div>
-    </div>
-</footer>
-
 <?php $this->endBody() ?>
 </body>
 
-<script src="/fuelux/js/fuelux.min.js"></script>
-<script src="/js/scrollto.js"></script>
-<script src="/js/jquery.sticky.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
+<script src="/fuelux/js/fuelux.js"></script>
+<script src="/js/jquery.custom-scroll.js"></script>
 <script src="/js/jquery.inputmask.bundle.js"></script>
 <script src="/js/jquery.noty.packaged.min.js"></script>
+<script src="/js/scrollto.js"></script>
+<script src="/smiles/jquery.cssemoticons.min.js"></script>
+<script src="/js/common.js"></script>
+<script>
+    $(function(){
+        $(document).ready(function(){
+            setTimeout(function() {
+                $('div#loaderDiv').animate({opacity: 'toggle'}, 500, function(){
+                    $('div#loaderDiv').remove();
+                });
+            }, 2000);
+        });
+    });
+</script>
+<!--<script src="/semantic/semantic.min.js"></script>-->
 
 
 </html>

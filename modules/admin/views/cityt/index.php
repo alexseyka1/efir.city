@@ -7,20 +7,21 @@ use yii\widgets\Pjax;
 /* @var $searchModel app\modules\admin\models\CitySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Cities';
+$this->title = 'Редактирование городов';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="city-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-
-    <p>
-        <?= Html::a('Create City', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <h1 style="display: inline-block;"><?= Html::encode($this->title) ?></h1> 
+    <?= Html::a('<i class="add icon"></i> Добавить город', ['create'], ['class' => 'ui button positive right floated']) ?>
+    
 <?php Pjax::begin(); ?>    <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'tableOptions' => [
+            'class' => 'ui violet table'
+        ],
+        'layout'=>"{items}\n{pager}",
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
@@ -28,7 +29,18 @@ $this->params['breadcrumbs'][] = $this->title;
             'country_id',
             'region_id',
             'name',
-            'active',
+            //'active',
+            [
+                'attribute'=>'active',
+                'contentOptions' =>['class' => 'table_class','style'=>'display:block;'],
+                'content'=>function($data){
+                    if($data->active == 1){
+                        return '<div class="ui toggle green checkbox checked"><input type="checkbox" checked> <label></label></div>';
+                    }else{
+                        return '<div class="ui toggle green checkbox"><input type="checkbox"> <label></label></div>';
+                    }
+                }
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
