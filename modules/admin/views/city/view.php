@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->city_id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Вы уверены, что хотите удалить запись?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -32,7 +32,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'country_id',
             'region_id',
             'name',
-            'active',
+            //'active',
+            [
+                'label' => 'Active',
+                'value' => $model->active,
+                'template' => '<div class="ui toggle checkbox"><input type="checkbox" name="gift" tabindex="0" class="hidden" '.($model->active == 1) ? 'checked' : ''.'><label>{label}</label></div>',
+            ],
         ],
     ]) ?>
 

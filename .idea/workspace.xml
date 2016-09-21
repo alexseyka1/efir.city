@@ -1,20 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/web/js/common.js" line="366" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="33a551bd-0bb3-4476-908b-65592f3535ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/admin/views/messages/stat.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/cityOld.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/layouts/new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/site/new.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/jquery.custom-scroll.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/jquery.custom-scroll2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/new.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/style2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/AppAsset.php" afterPath="$PROJECT_DIR$/assets/AppAsset.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/db.php" afterPath="$PROJECT_DIR$/config/db.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/params.php" afterPath="$PROJECT_DIR$/config/params.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/web.php" afterPath="$PROJECT_DIR$/config/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/GetController.php" afterPath="$PROJECT_DIR$/controllers/GetController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/SiteController.php" afterPath="$PROJECT_DIR$/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/StaticController.php" afterPath="$PROJECT_DIR$/controllers/StaticController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Category.php" afterPath="$PROJECT_DIR$/models/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/Module.php" afterPath="$PROJECT_DIR$/modules/admin/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/CategorydefaultController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/CategorydefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/CitytController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/CitytController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/CountryController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/CountryController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/MessagesController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/MessagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/default/command.php" afterPath="$PROJECT_DIR$/modules/admin/views/default/command.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/RegionController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/RegionController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/SeoController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/SeoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/SitesettingsController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/SitesettingsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/controllers/StaticsController.php" afterPath="$PROJECT_DIR$/modules/admin/controllers/StaticsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Category.php" afterPath="$PROJECT_DIR$/modules/admin/models/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CategoryQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/CategoryQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CategorySearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/CategorySearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Categorydefault.php" afterPath="$PROJECT_DIR$/modules/admin/models/Categorydefault.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CategorydefaultQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/CategorydefaultQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CategorydefaultSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/CategorydefaultSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/City.php" afterPath="$PROJECT_DIR$/modules/admin/models/City.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CityQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/CityQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CitySearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/CitySearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Country.php" afterPath="$PROJECT_DIR$/modules/admin/models/Country.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CountryQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/CountryQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/CountrySearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/CountrySearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Messages.php" afterPath="$PROJECT_DIR$/modules/admin/models/Messages.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/MessagesQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/MessagesQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/MessagesSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/MessagesSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Region.php" afterPath="$PROJECT_DIR$/modules/admin/models/Region.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/RegionQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/RegionQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/RegionSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/RegionSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Seo.php" afterPath="$PROJECT_DIR$/modules/admin/models/Seo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/SeoQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/SeoQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/SeoSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/SeoSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Sitesettings.php" afterPath="$PROJECT_DIR$/modules/admin/models/Sitesettings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/SitesettingsQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/SitesettingsQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/SitesettingsSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/SitesettingsSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/StaticQuery.php" afterPath="$PROJECT_DIR$/modules/admin/models/StaticQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/Statics.php" afterPath="$PROJECT_DIR$/modules/admin/models/Statics.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/models/StaticsSearch.php" afterPath="$PROJECT_DIR$/modules/admin/models/StaticsSearch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/category/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/category/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/categoryDefault/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/categoryDefault/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/city/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/city/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/cityt/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/cityt/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/country/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/country/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/default/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/default/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/modules/admin/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/create.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/messages/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/messages/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/region/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/region/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/seo/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/seo/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/sitesettings/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/sitesettings/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/_form.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/_search.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/create.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/index.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/update.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/admin/views/statics/view.php" afterPath="$PROJECT_DIR$/modules/admin/views/statics/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/city.php" afterPath="$PROJECT_DIR$/views/layouts/city.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main.php" afterPath="$PROJECT_DIR$/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/main2.php" afterPath="$PROJECT_DIR$/views/layouts/main2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/about.php" afterPath="$PROJECT_DIR$/views/site/about.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/category.php" afterPath="$PROJECT_DIR$/views/site/category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/error.php" afterPath="$PROJECT_DIR$/views/site/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/site/index.php" afterPath="$PROJECT_DIR$/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/cost.php" afterPath="$PROJECT_DIR$/views/static/cost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/faq.php" afterPath="$PROJECT_DIR$/views/static/faq.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/instruction.php" afterPath="$PROJECT_DIR$/views/static/instruction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/instructions.php" afterPath="$PROJECT_DIR$/views/static/instructions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/static/rules.php" afterPath="$PROJECT_DIR$/views/static/rules.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap-theme.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/bootstrap/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/web/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/bootstrap/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap/js/npm.js" afterPath="$PROJECT_DIR$/web/bootstrap/js/npm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/site.css" afterPath="$PROJECT_DIR$/web/css/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fuelux/css/fuelux.css" afterPath="$PROJECT_DIR$/web/fuelux/css/fuelux.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fuelux/css/fuelux.min.css" afterPath="$PROJECT_DIR$/web/fuelux/css/fuelux.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fuelux/fonts/fuelux.svg" afterPath="$PROJECT_DIR$/web/fuelux/fonts/fuelux.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fuelux/js/fuelux.js" afterPath="$PROJECT_DIR$/web/fuelux/js/fuelux.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/fuelux/js/fuelux.min.js" afterPath="$PROJECT_DIR$/web/fuelux/js/fuelux.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.inputmask.bundle.js" afterPath="$PROJECT_DIR$/web/js/jquery.inputmask.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.min.js" afterPath="$PROJECT_DIR$/web/js/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/jquery.sticky.js" afterPath="$PROJECT_DIR$/web/js/jquery.sticky.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/site.js" afterPath="$PROJECT_DIR$/web/js/site.js" />
     </list>
     <ignored path="freelance.iws" />
@@ -27,7 +170,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="ComposerSettings">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>C:\OpenServer\domains\efir.city.local\composer_2.phar</pharPath>
@@ -42,6 +184,7 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -49,40 +192,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/web.php">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/admin/controllers/DefaultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+            <state relative-caret-position="702">
+              <caret line="549" column="0" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
               <folding>
-                <element signature="e#49#66#0#PHP" expanded="true" />
-                <element signature="e#336#1220#0#PHP" expanded="true" />
-                <element signature="e#839#963#2#PHP" expanded="true" />
-                <element signature="e#1309#1418#0#PHP" expanded="true" />
-                <element signature="e#1642#3340#0#PHP" expanded="true" />
-                <element signature="e#3346#3868#0#PHP" expanded="true" />
-                <marker date="1469357409037" expanded="true" signature="2062:2355" ph="SELECT c.cit... city" />
+                <element signature="n#!!block;n#getMessages#0" expanded="true" />
+                <element signature="e#33889#42259#0" expanded="true" />
+                <element signature="e#34338#40996#0" expanded="true" />
+                <marker date="1474442155375" expanded="true" signature="31511:32669" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="31568:31800" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="31855:32568" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="31917:32525" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="31980:32209" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="32272:32408" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="36611:37769" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="36668:36900" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="36955:37668" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="37017:37625" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="37080:37309" ph="..." />
+                <marker date="1474442155375" expanded="true" signature="37372:37508" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="command.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/modules/admin/views/default/command.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +224,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -102,30 +234,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/site/error.php" />
-        <option value="$PROJECT_DIR$/vendor/yiizh/yii2-fuelux/FuelUXAsset.php" />
-        <option value="$PROJECT_DIR$/assets/AppAsset.php" />
-        <option value="$PROJECT_DIR$/controllers/Get.php" />
-        <option value="$PROJECT_DIR$/views/site/instruction.php" />
-        <option value="$PROJECT_DIR$/views/site/cost.php" />
-        <option value="$PROJECT_DIR$/views/site/rules.php" />
-        <option value="$PROJECT_DIR$/views/site/faq.php" />
-        <option value="$PROJECT_DIR$/vendor/dektrium/yii2-user/views/security/login.php" />
-        <option value="$PROJECT_DIR$/views/static/faq.php" />
-        <option value="$PROJECT_DIR$/views/static/rules.php" />
-        <option value="$PROJECT_DIR$/views/site/index.php" />
-        <option value="$PROJECT_DIR$/views/site/city.php" />
-        <option value="$PROJECT_DIR$/web/js/scrollto.js" />
-        <option value="$PROJECT_DIR$/models/StaticModel.php" />
-        <option value="$PROJECT_DIR$/views/static/instructions.php" />
-        <option value="$PROJECT_DIR$/views/static/cost.php" />
-        <option value="$PROJECT_DIR$/controllers/GetController.php" />
-        <option value="$PROJECT_DIR$/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/controllers/StaticController.php" />
-        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2-gii/Module.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/CategoryDefaultController.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/SiteSettingsController.php" />
-        <option value="$PROJECT_DIR$/modules/admin/controllers/SeoController.php" />
         <option value="$PROJECT_DIR$/modules/admin/models/City.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/CategoryController.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/CategorydefaultController.php" />
@@ -135,24 +245,46 @@
         <option value="$PROJECT_DIR$/modules/admin/controllers/SitesettingsController.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/StaticsController.php" />
         <option value="$PROJECT_DIR$/views/layouts/main2.php" />
-        <option value="$PROJECT_DIR$/web/css/site.css" />
-        <option value="$PROJECT_DIR$/modules/admin/views/default/index.php" />
-        <option value="$PROJECT_DIR$/web/js/site.js" />
-        <option value="$PROJECT_DIR$/views/layouts/city.php" />
-        <option value="$PROJECT_DIR$/models/Category.php" />
-        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/views/site/category.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/category/index.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/country/index.php" />
-        <option value="$PROJECT_DIR$/modules/admin/views/messages/index.php" />
-        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2-debug/Module.php" />
-        <option value="$PROJECT_DIR$/modules/admin/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/modules/admin/controllers/DefaultController.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9dced219-658f-44f8-a823-79d8635b8e15/console.sql" />
-        <option value="$PROJECT_DIR$/modules/admin/views/messages/stat.php" />
-        <option value="$PROJECT_DIR$/modules/admin/controllers/MessagesController.php" />
-        <option value="$PROJECT_DIR$/config/web.php" />
         <option value="$PROJECT_DIR$/modules/admin/views/default/command.php" />
+        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2-debug/Module.php" />
+        <option value="$PROJECT_DIR$/modules/admin/controllers/SeoController.php" />
+        <option value="$PROJECT_DIR$/web/css/site.css" />
+        <option value="$PROJECT_DIR$/modules/admin/views/messages/stat.php" />
+        <option value="$PROJECT_DIR$/views/site/new.php" />
+        <option value="$PROJECT_DIR$/web/semantic/semantic.css" />
+        <option value="$PROJECT_DIR$/web/css/new.css" />
+        <option value="$PROJECT_DIR$/views/layouts/new.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/views/site/category.php" />
+        <option value="$PROJECT_DIR$/assets/AppAsset.php" />
+        <option value="$PROJECT_DIR$/controllers/GetController.php" />
+        <option value="$PROJECT_DIR$/web/js/site.js" />
+        <option value="$PROJECT_DIR$/web/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/views/static/akcii.php" />
+        <option value="$PROJECT_DIR$/views/static/cost.php" />
+        <option value="$PROJECT_DIR$/views/static/faq.php" />
+        <option value="$PROJECT_DIR$/views/static/instruction.php" />
+        <option value="$PROJECT_DIR$/views/static/instructions.php" />
+        <option value="$PROJECT_DIR$/views/static/rules.php" />
+        <option value="$PROJECT_DIR$/controllers/StaticController.php" />
+        <option value="$PROJECT_DIR$/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/web/css/style-main.css" />
+        <option value="$PROJECT_DIR$/web/css/style2.css" />
+        <option value="$PROJECT_DIR$/config/web.php" />
+        <option value="$PROJECT_DIR$/models/Category.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/seo/index.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/default/index.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9dced219-658f-44f8-a823-79d8635b8e15/console.sql" />
+        <option value="$PROJECT_DIR$/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/views/site/index.php" />
+        <option value="$PROJECT_DIR$/modules/admin/views/messages/index.php" />
+        <option value="$PROJECT_DIR$/modules/admin/controllers/MessagesController.php" />
+        <option value="$PROJECT_DIR$/views/layouts/city.php" />
+        <option value="$PROJECT_DIR$/web/css/style.css" />
+        <option value="$PROJECT_DIR$/web/js/common.js" />
       </list>
     </option>
   </component>
@@ -201,10 +333,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="57" />
+    <option name="y" value="24" />
+    <option name="width" value="1863" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +363,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -245,7 +378,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -274,11 +406,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,77 +420,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city.local" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city.local" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="efir.city.local" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,7 +434,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -381,6 +443,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -442,57 +506,80 @@
       <workItem from="1468951907659" duration="3178000" />
       <workItem from="1469035821448" duration="16038000" />
       <workItem from="1469354851725" duration="8695000" />
+      <workItem from="1469723752712" duration="7967000" />
+      <workItem from="1469816058957" duration="3101000" />
+      <workItem from="1469892185302" duration="1202000" />
+      <workItem from="1470247409434" duration="19255000" />
+      <workItem from="1470429415902" duration="24000" />
+      <workItem from="1470583566232" duration="55000" />
+      <workItem from="1470757747471" duration="8167000" />
+      <workItem from="1470766423530" duration="8000" />
+      <workItem from="1470766442255" duration="21546000" />
+      <workItem from="1471120567439" duration="6075000" />
+      <workItem from="1471362367316" duration="2149000" />
+      <workItem from="1471448020739" duration="5845000" />
+      <workItem from="1471540203142" duration="3179000" />
+      <workItem from="1471776590770" duration="10107000" />
+      <workItem from="1471881692887" duration="8218000" />
+      <workItem from="1472797967514" duration="488000" />
+      <workItem from="1473147568896" duration="12394000" />
+      <workItem from="1473356360653" duration="6763000" />
+      <workItem from="1473612102704" duration="961000" />
+      <workItem from="1473776731847" duration="973000" />
+      <workItem from="1474441317196" duration="1090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84952000" />
+    <option name="totallyTimeSpent" value="204519000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="57" y="24" width="1863" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17957166" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14168039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32475883" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51607716" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18003026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4437299" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21104388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22541603" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22515102" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3174274" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51607716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44283414" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51607716" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17927383" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3236715" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51607716" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18003026" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4437299" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22541603" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -508,297 +595,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/static/faq.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/static/rules.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/city.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/scrollto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="2272" selection-start-line="6" selection-start-column="2272" selection-end-line="6" selection-end-column="2272" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/StaticModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/static/instructions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/static/cost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/StaticController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/models/Messages.php">
+    <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/CategorydefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="45" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/CitytController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="45" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/CountryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/RegionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="45" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/SeoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" column="14" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/SitesettingsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="45" column="16" selection-start-line="40" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2-gii/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="54" column="59" selection-start-line="54" selection-start-column="59" selection-end-line="54" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/StaticsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/models/City.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="212" column="26" selection-start-line="212" selection-start-column="26" selection-end-line="212" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/db.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/main2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/site/category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="128" selection-start-line="39" selection-start-column="128" selection-end-line="39" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="129" column="40" selection-start-line="129" selection-start-column="40" selection-end-line="129" selection-end-column="40" />
-          <folding>
-            <element signature="e#1474#2226#0#PHP" expanded="true" />
-            <element signature="e#6897#8915#0#PHP" expanded="true" />
-            <element signature="e#8921#10555#0#PHP" expanded="true" />
-            <element signature="e#10561#11810#0#PHP" expanded="true" />
-            <marker date="1469050492689" expanded="true" signature="276:373" ph="SELECT * FRO... country" />
-            <marker date="1469050492689" expanded="true" signature="862:1030" ph="SELECT * FRO... region" />
-            <marker date="1469050492689" expanded="true" signature="1625:1789" ph="SELECT * FRO... cityt" />
-            <marker date="1469050492689" expanded="true" signature="2387:2587" ph="SELECT * FRO... category" />
-            <marker date="1469050492689" expanded="true" signature="2762:2938" ph="SELECT * FRO... category_default" />
-            <marker date="1469050492689" expanded="true" signature="3641:4061" ph="SELECT co.co... cityt" />
-            <marker date="1469050492689" expanded="true" signature="4601:4683" ph="SELECT * FRO... site_settings" />
-            <marker date="1469050492689" expanded="true" signature="5124:5265" ph="SELECT * FRO... seo" />
-            <marker date="1469050492689" expanded="true" signature="5797:6019" ph="SELECT * FRO... category" />
-            <marker date="1469050492689" expanded="true" signature="6198:6380" ph="SELECT * FRO... category_default" />
-            <marker date="1469050492689" expanded="true" signature="7151:8557" ph="SELECT * FRO... id" />
-            <marker date="1469050492689" expanded="true" signature="7245:8227" ph="SELECT m.id,... messages" />
-            <marker date="1469050492689" expanded="true" signature="7548:7758" ph="SELECT m2.au... messages" />
-            <marker date="1469050492689" expanded="true" signature="7870:8083" ph="SELECT m2.co... messages" />
-            <marker date="1469050492689" expanded="true" signature="9214:10149" ph="SELECT * FRO... *" />
-            <marker date="1469050492689" expanded="true" signature="9262:9688" ph="SELECT * FRO... id" />
-            <marker date="1469050492689" expanded="true" signature="9314:9688" ph="SELECT m.id,... messages" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/GetController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layouts/city.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="214" column="174" selection-start-line="214" selection-start-column="174" selection-end-line="214" selection-end-column="174" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/category/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="32" column="12" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/categoryDefault/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/city/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/country/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/region/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/seo/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/sitesettings/index.php">
+    <entry file="file://$PROJECT_DIR$/web/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -812,175 +621,886 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2-debug/Module.php">
+    <entry file="file://$PROJECT_DIR$/web/semantic/semantic.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="59" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="e#6#150#0#PHP" expanded="false" />
-            <element signature="e#174#182#0#PHP" expanded="false" />
-            <element signature="e#3444#11932#0#PHP" expanded="false" />
-            <element signature="e#11973#12118#0#PHP" expanded="false" />
-            <element signature="e#12167#13024#0#PHP" expanded="false" />
-            <element signature="e#13065#13897#0#PHP" expanded="false" />
-            <element signature="e#13337#13452#1#PHP" expanded="false" />
-            <element signature="e#13938#14758#0#PHP" expanded="false" />
-            <element signature="e#14855#14954#0#PHP" expanded="false" />
-            <element signature="e#15073#15832#0#PHP" expanded="false" />
-            <element signature="e#15960#16633#0#PHP" expanded="false" />
-            <element signature="e#16698#17241#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="17193" column="13" selection-start-line="17193" selection-start-column="13" selection-end-line="17193" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/web/css/new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/site.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="302" column="24" selection-start-line="302" selection-start-column="24" selection-end-line="302" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.custom-scroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/cityOld.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="109" column="201" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/1c18a375/9dced219-658f-44f8-a823-79d8635b8e15/workslimfr.category" />
+    <entry file="dbDummy://dbtable:/1c18a375/9dced219-658f-44f8-a823-79d8635b8e15/workslimfr.category_default" />
+    <entry file="dbDummy://dbtable:/1c18a375/9dced219-658f-44f8-a823-79d8635b8e15/workslimfr.country" />
+    <entry file="dbDummy://dbtable:/1c18a375/9dced219-658f-44f8-a823-79d8635b8e15/workslimfr.city" />
+    <entry file="file://$PROJECT_DIR$/controllers/GetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="43" column="45" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/StaticModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/akcii.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/cost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/faq.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/instruction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/instructions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/static/rules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/StaticController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#49#57#0#PHP" expanded="false" />
-            <element signature="e#339#4013#0#PHP" expanded="false" />
-            <element signature="e#424#1312#0#PHP" expanded="false" />
-            <element signature="e#927#1051#2#PHP" expanded="false" />
-            <element signature="e#1389#1727#0#PHP" expanded="false" />
-            <element signature="e#1837#2009#0#PHP" expanded="false" />
-            <element signature="e#2174#2545#0#PHP" expanded="false" />
-            <element signature="e#2740#3121#0#PHP" expanded="false" />
-            <element signature="e#3319#3481#0#PHP" expanded="false" />
-            <element signature="e#3771#4011#0#PHP" expanded="false" />
-          </folding>
+          <caret line="88" column="17" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/messages/index.php">
+    <entry file="file://$PROJECT_DIR$/views/site/city.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/jquery.custom-scroll2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/jquery.custom-scroll.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/jquery.custom-scroll3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="89" column="79" selection-start-line="89" selection-start-column="79" selection-end-line="89" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/seo/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/messages/stat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/admin/views/default/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-          <folding>
-            <marker date="1469046627505" expanded="true" signature="2787:3511" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="2844:2899" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="2844:3247" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="2844:3354" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="2844:3481" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="3105:3247" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="3205:3237" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="4631:5095" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="4688:5065" ph="..." />
-            <marker date="1469046627505" expanded="true" signature="4975:4986" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/messages/stat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <marker date="1469362525930" expanded="true" signature="642:690" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:720" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:721" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:790" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:855" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:898" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="642:1167" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="1026:1167" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="1098:1167" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="1100:1167" ph="..." />
-            <marker date="1469362525930" expanded="true" signature="1150:1167" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9dced219-658f-44f8-a823-79d8635b8e15/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="136" column="44" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
-          <folding>
-            <element signature="e#6411#6653#0#HTML" expanded="true" />
-            <element signature="e#6486#6645#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="225" column="33" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/MessagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="208" column="39" selection-start-line="208" selection-start-column="39" selection-end-line="208" selection-end-column="39" />
-          <folding>
-            <element signature="e#49#57#0#PHP" expanded="true" />
-            <element signature="e#442#1330#0#PHP" expanded="true" />
-            <element signature="e#945#1069#2#PHP" expanded="true" />
-            <element signature="e#1407#1745#0#PHP" expanded="true" />
-            <element signature="e#1855#2027#0#PHP" expanded="true" />
-            <element signature="e#2192#2563#0#PHP" expanded="true" />
-            <element signature="e#2758#3139#0#PHP" expanded="true" />
-            <element signature="e#3337#3467#0#PHP" expanded="true" />
-            <element signature="e#3757#3997#0#PHP" expanded="true" />
-            <marker date="1469363592107" expanded="true" signature="4721:6799" ph="SELECT r.reg... city_id" />
-            <marker date="1469363592107" expanded="true" signature="5088:6700" ph="SELECT c.cit... messages" />
-            <marker date="1469363592107" expanded="true" signature="5231:5449" ph="SELECT COUNT... messages" />
-            <marker date="1469363592107" expanded="true" signature="5533:5768" ph="SELECT COUNT... messages" />
-            <marker date="1469363592107" expanded="true" signature="5858:6094" ph="SELECT COUNT... messages" />
-            <marker date="1469363592107" expanded="true" signature="6179:6416" ph="SELECT COUNT... messages" />
-          </folding>
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding />
+        <state relative-caret-position="608">
+          <caret line="88" column="67" selection-start-line="88" selection-start-column="67" selection-end-line="88" selection-end-column="67" />
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+          <caret line="87" column="38" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/assets/AppAsset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/1c18a375/9dced219-658f-44f8-a823-79d8635b8e15/workslimfr.seo" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9dced219-658f-44f8-a823-79d8635b8e15/console.sql" />
+    <entry file="file://$PROJECT_DIR$/models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="178" column="27" selection-start-line="173" selection-start-column="19" selection-end-line="178" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="73" column="7" selection-start-line="73" selection-start-column="7" selection-end-line="73" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="804" column="20" selection-start-line="804" selection-start-column="17" selection-end-line="804" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style-main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="803" column="20" selection-start-line="803" selection-start-column="17" selection-end-line="803" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/controllers/MessagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <caret line="119" column="50" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/main2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/site/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/admin/views/messages/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="376" column="23" selection-start-line="376" selection-start-column="23" selection-end-line="376" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layouts/city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding>
-            <element signature="e#49#66#0#PHP" expanded="true" />
-            <element signature="e#336#1220#0#PHP" expanded="true" />
-            <element signature="e#839#963#2#PHP" expanded="true" />
-            <element signature="e#1309#1418#0#PHP" expanded="true" />
-            <element signature="e#1642#3340#0#PHP" expanded="true" />
-            <element signature="e#3346#3868#0#PHP" expanded="true" />
-            <marker date="1469357409037" expanded="true" signature="2062:2355" ph="SELECT c.cit... city" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#312#1234#0" expanded="true" />
+            <element signature="e#952#1142#0" expanded="true" />
+            <element signature="e#1311#351208#0" expanded="true" />
+            <element signature="e#2035#2281#0" expanded="true" />
+            <element signature="e#2618#2670#0" expanded="true" />
+            <element signature="e#2983#3033#0" expanded="true" />
+            <element signature="e#3188#3462#0" expanded="true" />
+            <element signature="e#3617#3966#0" expanded="true" />
+            <element signature="e#4186#4253#0" expanded="true" />
+            <element signature="e#4290#4447#0" expanded="true" />
+            <element signature="e#4364#4434#0" expanded="true" />
+            <element signature="e#4476#4556#0" expanded="true" />
+            <element signature="e#4585#4629#0" expanded="true" />
+            <element signature="e#4657#4702#0" expanded="true" />
+            <element signature="e#4731#4898#0" expanded="true" />
+            <element signature="e#4925#4998#0" expanded="true" />
+            <element signature="e#5233#7398#0" expanded="true" />
+            <element signature="e#7668#7715#0" expanded="true" />
+            <element signature="e#7784#7847#0" expanded="true" />
+            <element signature="e#7917#7982#0" expanded="true" />
+            <element signature="e#8020#8417#0" expanded="true" />
+            <element signature="e#8459#9138#0" expanded="true" />
+            <element signature="e#9180#9316#0" expanded="true" />
+            <element signature="e#9349#9665#0" expanded="true" />
+            <element signature="e#9755#10561#0" expanded="true" />
+            <element signature="e#10767#10867#0" expanded="true" />
+            <element signature="e#10911#11010#0" expanded="true" />
+            <element signature="e#11102#12537#0" expanded="true" />
+            <element signature="e#12603#12721#0" expanded="true" />
+            <element signature="e#12814#13227#0" expanded="true" />
+            <element signature="e#13272#13351#0" expanded="true" />
+            <element signature="e#13395#13655#0" expanded="true" />
+            <element signature="e#13708#14265#0" expanded="true" />
+            <element signature="e#14356#15275#0" expanded="true" />
+            <element signature="e#15477#16331#0" expanded="true" />
+            <element signature="e#16024#16131#0" expanded="true" />
+            <element signature="e#16661#16736#0" expanded="true" />
+            <element signature="e#16772#17402#0" expanded="true" />
+            <element signature="e#17761#111841#0" expanded="true" />
+            <element signature="e#18676#18829#0" expanded="true" />
+            <element signature="e#19331#19636#0" expanded="true" />
+            <element signature="e#24006#24666#0" expanded="true" />
+            <element signature="e#24878#24932#0" expanded="true" />
+            <element signature="e#25479#25572#0" expanded="true" />
+            <element signature="e#25706#25975#0" expanded="true" />
+            <element signature="e#26074#31205#0" expanded="true" />
+            <element signature="e#31585#32100#0" expanded="true" />
+            <element signature="e#31664#32056#0" expanded="true" />
+            <element signature="e#32288#32368#0" expanded="true" />
+            <element signature="e#32572#33075#0" expanded="true" />
+            <element signature="e#33370#33575#0" expanded="true" />
+            <element signature="e#33872#34573#0" expanded="true" />
+            <element signature="e#34758#34961#0" expanded="true" />
+            <element signature="e#34800#34946#0" expanded="true" />
+            <element signature="e#35143#35369#0" expanded="true" />
+            <element signature="e#35185#35354#0" expanded="true" />
+            <element signature="e#35557#36249#0" expanded="true" />
+            <element signature="e#35616#36233#0" expanded="true" />
+            <element signature="e#35726#36213#0" expanded="true" />
+            <element signature="e#36540#36653#0" expanded="true" />
+            <element signature="e#36995#37331#0" expanded="true" />
+            <element signature="e#37676#55395#0" expanded="true" />
+            <element signature="e#39474#39593#0" expanded="true" />
+            <element signature="e#39871#40018#0" expanded="true" />
+            <element signature="e#40464#40639#0" expanded="true" />
+            <element signature="e#40784#41226#0" expanded="true" />
+            <element signature="e#41283#41527#0" expanded="true" />
+            <element signature="e#41406#41504#0" expanded="true" />
+            <element signature="e#41766#42121#0" expanded="true" />
+            <element signature="e#41889#42098#0" expanded="true" />
+            <element signature="e#42276#42674#0" expanded="true" />
+            <element signature="e#42723#43482#0" expanded="true" />
+            <element signature="e#43612#43789#0" expanded="true" />
+            <element signature="e#44732#47270#0" expanded="true" />
+            <element signature="e#47317#48545#0" expanded="true" />
+            <element signature="e#48924#49416#0" expanded="true" />
+            <element signature="e#50105#50578#0" expanded="true" />
+            <element signature="e#50618#50961#0" expanded="true" />
+            <element signature="e#51203#53051#0" expanded="true" />
+            <element signature="e#53091#55351#0" expanded="true" />
+            <element signature="e#55454#55530#0" expanded="true" />
+            <element signature="e#55593#56778#0" expanded="true" />
+            <element signature="e#56837#57086#0" expanded="true" />
+            <element signature="e#57138#57991#0" expanded="true" />
+            <element signature="e#58037#58136#0" expanded="true" />
+            <element signature="e#58321#59295#0" expanded="true" />
+            <element signature="e#59516#60783#0" expanded="true" />
+            <element signature="e#61398#61889#0" expanded="true" />
+            <element signature="e#61939#63403#0" expanded="true" />
+            <element signature="e#63454#64733#0" expanded="true" />
+            <element signature="e#64837#65255#0" expanded="true" />
+            <element signature="e#65103#65232#0" expanded="true" />
+            <element signature="e#65309#65856#0" expanded="true" />
+            <element signature="e#65612#65832#0" expanded="true" />
+            <element signature="e#65921#67204#0" expanded="true" />
+            <element signature="e#65971#67181#0" expanded="true" />
+            <element signature="e#67282#72516#0" expanded="true" />
+            <element signature="e#67635#67724#0" expanded="true" />
+            <element signature="e#67787#72493#0" expanded="true" />
+            <element signature="e#72578#74499#0" expanded="true" />
+            <element signature="e#73797#74262#0" expanded="true" />
+            <element signature="e#74315#74414#0" expanded="true" />
+            <element signature="e#74659#76087#0" expanded="true" />
+            <element signature="e#75137#75676#0" expanded="true" />
+            <element signature="e#75739#76064#0" expanded="true" />
+            <element signature="e#76152#76324#0" expanded="true" />
+            <element signature="e#76202#76301#0" expanded="true" />
+            <element signature="e#76390#76674#0" expanded="true" />
+            <element signature="e#76509#76651#0" expanded="true" />
+            <element signature="e#77293#78335#0" expanded="true" />
+            <element signature="e#77653#78312#0" expanded="true" />
+            <element signature="e#78423#78590#0" expanded="true" />
+            <element signature="e#78638#78710#0" expanded="true" />
+            <element signature="e#78759#78941#0" expanded="true" />
+            <element signature="e#79034#79113#0" expanded="true" />
+            <element signature="e#79165#79243#0" expanded="true" />
+            <element signature="e#79294#79688#0" expanded="true" />
+            <element signature="e#79740#80089#0" expanded="true" />
+            <element signature="e#80170#80848#0" expanded="true" />
+            <element signature="e#80898#80984#0" expanded="true" />
+            <element signature="e#81077#81162#0" expanded="true" />
+            <element signature="e#81211#81296#0" expanded="true" />
+            <element signature="e#81346#81529#0" expanded="true" />
+            <element signature="e#81577#82023#0" expanded="true" />
+            <element signature="e#82135#82196#0" expanded="true" />
+            <element signature="e#82284#82354#0" expanded="true" />
+            <element signature="e#82450#82553#0" expanded="true" />
+            <element signature="e#82641#82877#0" expanded="true" />
+            <element signature="e#82964#83200#0" expanded="true" />
+            <element signature="e#83296#83565#0" expanded="true" />
+            <element signature="e#83661#83934#0" expanded="true" />
+            <element signature="e#84628#87142#0" expanded="true" />
+            <element signature="e#87187#87446#0" expanded="true" />
+            <element signature="e#87512#90189#0" expanded="true" />
+            <element signature="e#87830#88113#0" expanded="true" />
+            <element signature="e#88237#90174#0" expanded="true" />
+            <element signature="e#90239#90709#0" expanded="true" />
+            <element signature="e#90337#90660#0" expanded="true" />
+            <element signature="e#90780#91018#0" expanded="true" />
+            <element signature="e#91090#91729#0" expanded="true" />
+            <element signature="e#91833#96176#0" expanded="true" />
+            <element signature="e#92203#96160#0" expanded="true" />
+            <element signature="e#96227#99332#0" expanded="true" />
+            <element signature="e#96688#96765#0" expanded="true" />
+            <element signature="e#96863#96953#0" expanded="true" />
+            <element signature="e#97045#97537#0" expanded="true" />
+            <element signature="e#99412#104220#0" expanded="true" />
+            <element signature="e#99612#104088#0" expanded="true" />
+            <element signature="e#104313#105448#0" expanded="true" />
+            <element signature="e#105970#109234#0" expanded="true" />
+            <element signature="e#109785#109952#0" expanded="true" />
+            <element signature="e#110128#110276#0" expanded="true" />
+            <element signature="e#110365#110539#0" expanded="true" />
+            <element signature="e#110692#110897#0" expanded="true" />
+            <element signature="e#110969#111139#0" expanded="true" />
+            <element signature="e#111280#111364#0" expanded="true" />
+            <element signature="e#111437#111786#0" expanded="true" />
+            <element signature="e#112374#113190#0" expanded="true" />
+            <element signature="e#112486#112602#0" expanded="true" />
+            <element signature="e#112712#112782#0" expanded="true" />
+            <element signature="e#113102#113182#0" expanded="true" />
+            <element signature="e#113241#113623#0" expanded="true" />
+            <element signature="e#113555#113614#0" expanded="true" />
+            <element signature="e#113684#114566#0" expanded="true" />
+            <element signature="e#113922#114148#0" expanded="true" />
+            <element signature="e#114605#114690#0" expanded="true" />
+            <element signature="e#114726#114810#0" expanded="true" />
+            <element signature="e#114845#115295#0" expanded="true" />
+            <element signature="e#115711#119753#0" expanded="true" />
+            <element signature="e#120276#120702#0" expanded="true" />
+            <element signature="e#120742#120985#0" expanded="true" />
+            <element signature="e#121050#121416#0" expanded="true" />
+            <element signature="e#121181#121404#0" expanded="true" />
+            <element signature="e#121467#122450#0" expanded="true" />
+            <element signature="e#122548#123149#0" expanded="true" />
+            <element signature="e#123195#123381#0" expanded="true" />
+            <element signature="e#123422#123563#0" expanded="true" />
+            <element signature="e#123606#123693#0" expanded="true" />
+            <element signature="e#123746#123868#0" expanded="true" />
+            <element signature="e#123904#123968#0" expanded="true" />
+            <element signature="e#124019#124090#0" expanded="true" />
+            <element signature="e#124123#124185#0" expanded="true" />
+            <element signature="e#124218#124284#0" expanded="true" />
+            <element signature="e#124320#124385#0" expanded="true" />
+            <element signature="e#124421#124490#0" expanded="true" />
+            <element signature="e#124538#124610#0" expanded="true" />
+            <element signature="e#124658#124734#0" expanded="true" />
+            <element signature="e#124771#124863#0" expanded="true" />
+            <element signature="e#124900#124965#0" expanded="true" />
+            <element signature="e#125002#125093#0" expanded="true" />
+            <element signature="e#125122#125920#0" expanded="true" />
+            <element signature="e#125180#125913#0" expanded="true" />
+            <element signature="e#126145#126350#0" expanded="true" />
+            <element signature="e#126273#126319#0" expanded="true" />
+            <element signature="e#127264#134047#0" expanded="true" />
+            <element signature="e#128238#129234#0" expanded="true" />
+            <element signature="e#129399#130838#0" expanded="true" />
+            <element signature="e#129591#130247#0" expanded="true" />
+            <element signature="e#129659#130219#0" expanded="true" />
+            <element signature="e#130926#131808#0" expanded="true" />
+            <element signature="e#131029#131733#0" expanded="true" />
+            <element signature="e#132002#132114#0" expanded="true" />
+            <element signature="e#132204#132325#0" expanded="true" />
+            <element signature="e#132415#132522#0" expanded="true" />
+            <element signature="e#132596#132649#0" expanded="true" />
+            <element signature="e#132738#132928#0" expanded="true" />
+            <element signature="e#132998#133052#0" expanded="true" />
+            <element signature="e#133181#133622#0" expanded="true" />
+            <element signature="e#133724#133830#0" expanded="true" />
+            <element signature="e#133949#134004#0" expanded="true" />
+            <element signature="e#134107#137923#0" expanded="true" />
+            <element signature="e#134576#134637#0" expanded="true" />
+            <element signature="e#134678#134808#0" expanded="true" />
+            <element signature="e#134881#136180#0" expanded="true" />
+            <element signature="e#134996#136146#0" expanded="true" />
+            <element signature="e#135068#136078#0" expanded="true" />
+            <element signature="e#135323#136046#0" expanded="true" />
+            <element signature="e#136367#136476#0" expanded="true" />
+            <element signature="e#136706#137643#0" expanded="true" />
+            <element signature="e#137016#137230#0" expanded="true" />
+            <element signature="e#137413#137565#0" expanded="true" />
+            <element signature="e#138017#140270#0" expanded="true" />
+            <element signature="e#138630#139140#0" expanded="true" />
+            <element signature="e#138677#139121#0" expanded="true" />
+            <element signature="e#140372#140472#0" expanded="true" />
+            <element signature="e#140800#140946#0" expanded="true" />
+            <element signature="e#141021#141814#0" expanded="true" />
+            <element signature="e#141920#142093#0" expanded="true" />
+            <element signature="e#142138#143068#0" expanded="true" />
+            <element signature="e#143379#144776#0" expanded="true" />
+            <element signature="e#144259#144349#0" expanded="true" />
+            <element signature="e#144888#145161#0" expanded="true" />
+            <element signature="e#145185#145556#0" expanded="true" />
+            <element signature="e#145443#145485#0" expanded="true" />
+            <element signature="e#145669#146868#0" expanded="true" />
+            <element signature="e#146914#147937#0" expanded="true" />
+            <element signature="e#147975#148386#0" expanded="true" />
+            <element signature="e#148434#149701#0" expanded="true" />
+            <element signature="e#149742#151344#0" expanded="true" />
+            <element signature="e#151381#151507#0" expanded="true" />
+            <element signature="e#151544#151672#0" expanded="true" />
+            <element signature="e#152387#153468#0" expanded="true" />
+            <element signature="e#153524#153610#0" expanded="true" />
+            <element signature="e#153656#153724#0" expanded="true" />
+            <element signature="e#153770#153825#0" expanded="true" />
+            <element signature="e#154028#154096#0" expanded="true" />
+            <element signature="e#154143#154198#0" expanded="true" />
+            <element signature="e#154268#158137#0" expanded="true" />
+            <element signature="e#155530#155597#0" expanded="true" />
+            <element signature="e#155666#158077#0" expanded="true" />
+            <element signature="e#157205#158061#0" expanded="true" />
+            <element signature="e#158176#158292#0" expanded="true" />
+            <element signature="e#158218#158280#0" expanded="true" />
+            <element signature="e#158367#158960#0" expanded="true" />
+            <element signature="e#159003#160047#0" expanded="true" />
+            <element signature="e#159263#159332#0" expanded="true" />
+            <element signature="e#160174#160502#0" expanded="true" />
+            <element signature="e#160373#160471#0" expanded="true" />
+            <element signature="e#160573#161319#0" expanded="true" />
+            <element signature="e#160965#161307#0" expanded="true" />
+            <element signature="e#161355#161470#0" expanded="true" />
+            <element signature="e#161397#161458#0" expanded="true" />
+            <element signature="e#161509#161571#0" expanded="true" />
+            <element signature="e#161727#162559#0" expanded="true" />
+            <element signature="e#161923#162075#0" expanded="true" />
+            <element signature="e#162731#162992#0" expanded="true" />
+            <element signature="e#163066#164085#0" expanded="true" />
+            <element signature="e#164419#164447#0" expanded="true" />
+            <element signature="e#164476#164505#0" expanded="true" />
+            <element signature="e#164540#164632#0" expanded="true" />
+            <element signature="e#164905#169225#0" expanded="true" />
+            <element signature="e#166038#166391#0" expanded="true" />
+            <element signature="e#169360#172335#0" expanded="true" />
+            <element signature="e#172399#177785#0" expanded="true" />
+            <element signature="e#177824#180240#0" expanded="true" />
+            <element signature="e#180289#182240#0" expanded="true" />
+            <element signature="e#182612#182866#0" expanded="true" />
+            <element signature="e#183067#184200#0" expanded="true" />
+            <element signature="e#184244#185677#0" expanded="true" />
+            <element signature="e#185989#186178#0" expanded="true" />
+            <element signature="e#186291#186478#0" expanded="true" />
+            <element signature="e#186675#186896#0" expanded="true" />
+            <element signature="e#187029#187113#0" expanded="true" />
+            <element signature="e#187206#187525#0" expanded="true" />
+            <element signature="e#187608#188376#0" expanded="true" />
+            <element signature="e#188441#188561#0" expanded="true" />
+            <element signature="e#188606#189738#0" expanded="true" />
+            <element signature="e#190117#190313#0" expanded="true" />
+            <element signature="e#190351#190551#0" expanded="true" />
+            <element signature="e#190598#190862#0" expanded="true" />
+            <element signature="e#191154#191966#0" expanded="true" />
+            <element signature="e#191294#191949#0" expanded="true" />
+            <element signature="e#192168#193344#0" expanded="true" />
+            <element signature="e#192317#192425#0" expanded="true" />
+            <element signature="e#192506#192852#0" expanded="true" />
+            <element signature="e#192891#193319#0" expanded="true" />
+            <element signature="e#193446#195320#0" expanded="true" />
+            <element signature="e#194829#195026#0" expanded="true" />
+            <element signature="e#195224#195308#0" expanded="true" />
+            <element signature="e#195373#195444#0" expanded="true" />
+            <element signature="e#195491#196666#0" expanded="true" />
+            <element signature="e#196573#196654#0" expanded="true" />
+            <element signature="e#196709#196836#0" expanded="true" />
+            <element signature="e#196751#196824#0" expanded="true" />
+            <element signature="e#196885#197039#0" expanded="true" />
+            <element signature="e#198291#198579#0" expanded="true" />
+            <element signature="e#198699#198803#0" expanded="true" />
+            <element signature="e#198839#199054#0" expanded="true" />
+            <element signature="e#199154#199400#0" expanded="true" />
+            <element signature="e#199443#200426#0" expanded="true" />
+            <element signature="e#200464#200807#0" expanded="true" />
+            <element signature="e#200878#201370#0" expanded="true" />
+            <element signature="e#201458#203050#0" expanded="true" />
+            <element signature="e#203123#206300#0" expanded="true" />
+            <element signature="e#206340#207627#0" expanded="true" />
+            <element signature="e#207692#208146#0" expanded="true" />
+            <element signature="e#207745#208102#0" expanded="true" />
+            <element signature="e#207883#208086#0" expanded="true" />
+            <element signature="e#208176#208492#0" expanded="true" />
+            <element signature="e#208240#208480#0" expanded="true" />
+            <element signature="e#208523#208859#0" expanded="true" />
+            <element signature="e#208587#208847#0" expanded="true" />
+            <element signature="e#208889#209103#0" expanded="true" />
+            <element signature="e#208953#209091#0" expanded="true" />
+            <element signature="e#209132#209358#0" expanded="true" />
+            <element signature="e#209196#209346#0" expanded="true" />
+            <element signature="e#209432#210082#0" expanded="true" />
+            <element signature="e#210111#210527#0" expanded="true" />
+            <element signature="e#210590#210908#0" expanded="true" />
+            <element signature="e#210802#210896#0" expanded="true" />
+            <element signature="e#210943#212341#0" expanded="true" />
+            <element signature="e#210996#212297#0" expanded="true" />
+            <element signature="e#212376#212942#0" expanded="true" />
+            <element signature="e#212557#212764#0" expanded="true" />
+            <element signature="e#212982#213043#0" expanded="true" />
+            <element signature="e#213091#216597#0" expanded="true" />
+            <element signature="e#213739#213997#0" expanded="true" />
+            <element signature="e#216813#217414#0" expanded="true" />
+            <element signature="e#216864#217407#0" expanded="true" />
+            <element signature="e#217703#218453#0" expanded="true" />
+            <element signature="e#218607#219557#0" expanded="true" />
+            <element signature="e#219700#220107#0" expanded="true" />
+            <element signature="e#220156#221744#0" expanded="true" />
+            <element signature="e#221796#222372#0" expanded="true" />
+            <element signature="e#221923#222355#0" expanded="true" />
+            <element signature="e#222391#226372#0" expanded="true" />
+            <element signature="e#223349#224020#0" expanded="true" />
+            <element signature="e#224258#224628#0" expanded="true" />
+            <element signature="e#224676#224892#0" expanded="true" />
+            <element signature="e#224942#226340#0" expanded="true" />
+            <element signature="e#226523#226972#0" expanded="true" />
+            <element signature="e#227719#228208#0" expanded="true" />
+            <element signature="e#228266#228531#0" expanded="true" />
+            <element signature="e#228609#230139#0" expanded="true" />
+            <element signature="e#230192#231938#0" expanded="true" />
+            <element signature="e#231980#233811#0" expanded="true" />
+            <element signature="e#234051#234322#0" expanded="true" />
+            <element signature="e#235094#237528#0" expanded="true" />
+            <element signature="e#237582#238857#0" expanded="true" />
+            <element signature="e#238926#240094#0" expanded="true" />
+            <element signature="e#239015#239593#0" expanded="true" />
+            <element signature="e#239394#239495#0" expanded="true" />
+            <element signature="e#239644#240077#0" expanded="true" />
+            <element signature="e#240234#240417#0" expanded="true" />
+            <element signature="e#240599#241277#0" expanded="true" />
+            <element signature="e#240686#241136#0" expanded="true" />
+            <element signature="e#241341#242051#0" expanded="true" />
+            <element signature="e#241406#242003#0" expanded="true" />
+            <element signature="e#242078#242132#0" expanded="true" />
+            <element signature="e#242159#242207#0" expanded="true" />
+            <element signature="e#242243#242604#0" expanded="true" />
+            <element signature="e#242406#242592#0" expanded="true" />
+            <element signature="e#242670#242754#0" expanded="true" />
+            <element signature="e#242899#243201#0" expanded="true" />
+            <element signature="e#243227#243423#0" expanded="true" />
+            <element signature="e#243458#244227#0" expanded="true" />
+            <element signature="e#244370#245163#0" expanded="true" />
+            <element signature="e#245200#245840#0" expanded="true" />
+            <element signature="e#246033#246178#0" expanded="true" />
+            <element signature="e#246239#246272#0" expanded="true" />
+            <element signature="e#246303#246368#0" expanded="true" />
+            <element signature="e#246781#248964#0" expanded="true" />
+            <element signature="e#249065#249188#0" expanded="true" />
+            <element signature="e#249097#249139#0" expanded="true" />
+            <element signature="e#249285#249838#0" expanded="true" />
+            <element signature="e#249891#250289#0" expanded="true" />
+            <element signature="e#250342#255335#0" expanded="true" />
+            <element signature="e#250946#251067#0" expanded="true" />
+            <element signature="e#251149#251472#0" expanded="true" />
+            <element signature="e#251269#251456#0" expanded="true" />
+            <element signature="e#252606#252782#0" expanded="true" />
+            <element signature="e#254320#254382#0" expanded="true" />
+            <element signature="e#254432#254645#0" expanded="true" />
+            <element signature="e#255385#256599#0" expanded="true" />
+            <element signature="e#256653#260640#0" expanded="true" />
+            <element signature="e#256828#256939#0" expanded="true" />
+            <element signature="e#256972#257991#0" expanded="true" />
+            <element signature="e#258461#258734#0" expanded="true" />
+            <element signature="e#258778#259664#0" expanded="true" />
+            <element signature="e#260739#261247#0" expanded="true" />
+            <element signature="e#261299#261485#0" expanded="true" />
+            <element signature="e#261544#262539#0" expanded="true" />
+            <element signature="e#262301#262511#0" expanded="true" />
+            <element signature="e#262621#262892#0" expanded="true" />
+            <element signature="e#262953#263728#0" expanded="true" />
+            <element signature="e#263116#263517#0" expanded="true" />
+            <element signature="e#263782#265648#0" expanded="true" />
+            <element signature="e#263830#263952#0" expanded="true" />
+            <element signature="e#264275#265636#0" expanded="true" />
+            <element signature="e#265683#267179#0" expanded="true" />
+            <element signature="e#265812#267167#0" expanded="true" />
+            <element signature="e#267255#267570#0" expanded="true" />
+            <element signature="e#267360#267563#0" expanded="true" />
+            <element signature="e#267888#268039#0" expanded="true" />
+            <element signature="e#267954#268032#0" expanded="true" />
+            <element signature="e#268099#268569#0" expanded="true" />
+            <element signature="e#268612#268772#0" expanded="true" />
+            <element signature="e#268838#268954#0" expanded="true" />
+            <element signature="e#268989#269054#0" expanded="true" />
+            <element signature="e#269342#269664#0" expanded="true" />
+            <element signature="e#269499#269656#0" expanded="true" />
+            <element signature="e#269589#269645#0" expanded="true" />
+            <element signature="e#269684#270635#0" expanded="true" />
+            <element signature="e#270777#270871#0" expanded="true" />
+            <element signature="e#270911#271029#0" expanded="true" />
+            <element signature="e#270953#271017#0" expanded="true" />
+            <element signature="e#271103#272731#0" expanded="true" />
+            <element signature="e#272778#273434#0" expanded="true" />
+            <element signature="e#273523#273947#0" expanded="true" />
+            <element signature="e#274073#274342#0" expanded="true" />
+            <element signature="e#274434#275025#0" expanded="true" />
+            <element signature="e#274557#275018#0" expanded="true" />
+            <element signature="e#275154#275248#0" expanded="true" />
+            <element signature="e#275288#275420#0" expanded="true" />
+            <element signature="e#275330#275408#0" expanded="true" />
+            <element signature="e#275588#276526#0" expanded="true" />
+            <element signature="e#276612#276809#0" expanded="true" />
+            <element signature="e#276949#277163#0" expanded="true" />
+            <element signature="e#277430#277490#0" expanded="true" />
+            <element signature="e#277589#279152#0" expanded="true" />
+            <element signature="e#277865#277970#0" expanded="true" />
+            <element signature="e#279194#280881#0" expanded="true" />
+            <element signature="e#279496#279604#0" expanded="true" />
+            <element signature="e#280933#282936#0" expanded="true" />
+            <element signature="e#281241#281367#0" expanded="true" />
+            <element signature="e#281425#282924#0" expanded="true" />
+            <element signature="e#282978#283352#0" expanded="true" />
+            <element signature="e#283445#285461#0" expanded="true" />
+            <element signature="e#284343#285449#0" expanded="true" />
+            <element signature="e#284991#285078#0" expanded="true" />
+            <element signature="e#285571#285905#0" expanded="true" />
+            <element signature="e#285981#287593#0" expanded="true" />
+            <element signature="e#287641#288369#0" expanded="true" />
+            <element signature="e#288494#288968#0" expanded="true" />
+            <element signature="e#288573#288751#0" expanded="true" />
+            <element signature="e#288856#288951#0" expanded="true" />
+            <element signature="e#289295#289527#0" expanded="true" />
+            <element signature="e#289379#289520#0" expanded="true" />
+            <element signature="e#289595#289682#0" expanded="true" />
+            <element signature="e#289727#289791#0" expanded="true" />
+            <element signature="e#289831#289890#0" expanded="true" />
+            <element signature="e#289949#290017#0" expanded="true" />
+            <element signature="e#290071#290255#0" expanded="true" />
+            <element signature="e#290437#290484#0" expanded="true" />
+            <element signature="e#290556#291024#0" expanded="true" />
+            <element signature="e#292548#293618#0" expanded="true" />
+            <element signature="e#292665#293611#0" expanded="true" />
+            <element signature="e#293767#294714#0" expanded="true" />
+            <element signature="e#293897#294618#0" expanded="true" />
+            <element signature="e#294055#294577#0" expanded="true" />
+            <element signature="e#294862#295257#0" expanded="true" />
+            <element signature="e#295500#297221#0" expanded="true" />
+            <element signature="e#297420#300896#0" expanded="true" />
+            <element signature="e#303299#303573#0" expanded="true" />
+            <element signature="e#303771#319277#0" expanded="true" />
+            <element signature="e#305675#306296#0" expanded="true" />
+            <element signature="e#306387#306485#0" expanded="true" />
+            <element signature="e#306591#306937#0" expanded="true" />
+            <element signature="e#307057#307230#0" expanded="true" />
+            <element signature="e#307331#308020#0" expanded="true" />
+            <element signature="e#308115#308412#0" expanded="true" />
+            <element signature="e#314348#314419#0" expanded="true" />
+            <element signature="e#315035#319240#0" expanded="true" />
+            <element signature="e#319329#319402#0" expanded="true" />
+            <element signature="e#319450#319530#0" expanded="true" />
+            <element signature="e#319598#320112#0" expanded="true" />
+            <element signature="e#319665#320105#0" expanded="true" />
+            <element signature="e#320155#320362#0" expanded="true" />
+            <element signature="e#320423#321265#0" expanded="true" />
+            <element signature="e#320542#320627#0" expanded="true" />
+            <element signature="e#320975#321198#0" expanded="true" />
+            <element signature="e#321304#321836#0" expanded="true" />
+            <element signature="e#321400#321487#0" expanded="true" />
+            <element signature="e#321545#321824#0" expanded="true" />
+            <element signature="e#321870#322081#0" expanded="true" />
+            <element signature="e#321972#322069#0" expanded="true" />
+            <element signature="e#322111#322338#0" expanded="true" />
+            <element signature="e#322162#322320#0" expanded="true" />
+            <element signature="e#322399#322593#0" expanded="true" />
+            <element signature="e#322646#322705#0" expanded="true" />
+            <element signature="e#322974#323891#0" expanded="true" />
+            <element signature="e#323118#323537#0" expanded="true" />
+            <element signature="e#324024#325287#0" expanded="true" />
+            <element signature="e#324107#324386#0" expanded="true" />
+            <element signature="e#324838#324899#0" expanded="true" />
+            <element signature="e#325343#325412#0" expanded="true" />
+            <element signature="e#325449#326674#0" expanded="true" />
+            <element signature="e#325490#325722#0" expanded="true" />
+            <element signature="e#325759#326146#0" expanded="true" />
+            <element signature="e#326189#326656#0" expanded="true" />
+            <element signature="e#326425#326553#0" expanded="true" />
+            <element signature="e#326726#326812#0" expanded="true" />
+            <element signature="e#327382#327492#0" expanded="true" />
+            <element signature="e#327674#331899#0" expanded="true" />
+            <element signature="e#327915#331716#0" expanded="true" />
+            <element signature="e#329448#330997#0" expanded="true" />
+            <element signature="e#329492#330974#0" expanded="true" />
+            <element signature="e#331753#331868#0" expanded="true" />
+            <element signature="e#332237#332324#0" expanded="true" />
+            <element signature="e#332441#332595#0" expanded="true" />
+            <element signature="e#332683#333737#0" expanded="true" />
+            <element signature="e#332881#333555#0" expanded="true" />
+            <element signature="e#333176#333452#0" expanded="true" />
+            <element signature="e#333591#333706#0" expanded="true" />
+            <element signature="e#333920#334086#0" expanded="true" />
+            <element signature="e#334245#336832#0" expanded="true" />
+            <element signature="e#335415#335609#0" expanded="true" />
+            <element signature="e#335817#335879#0" expanded="true" />
+            <element signature="e#335976#336750#0" expanded="true" />
+            <element signature="e#337112#337788#0" expanded="true" />
+            <element signature="e#337964#339727#0" expanded="true" />
+            <element signature="e#339008#339524#0" expanded="true" />
+            <element signature="e#339574#339687#0" expanded="true" />
+            <element signature="e#339918#340021#0" expanded="true" />
+            <element signature="e#339963#340014#0" expanded="true" />
+            <element signature="e#340080#340202#0" expanded="true" />
+            <element signature="e#340139#340187#0" expanded="true" />
+            <element signature="e#340344#340440#0" expanded="true" />
+            <element signature="e#340512#342250#0" expanded="true" />
+            <element signature="e#342318#343497#0" expanded="true" />
+            <element signature="e#342476#342568#0" expanded="true" />
+            <element signature="e#343529#344942#0" expanded="true" />
+            <element signature="e#344978#345385#0" expanded="true" />
+            <element signature="e#345019#345373#0" expanded="true" />
+            <element signature="e#345537#346220#0" expanded="true" />
+            <element signature="e#345628#346213#0" expanded="true" />
+            <element signature="e#345693#346163#0" expanded="true" />
+            <element signature="e#346667#347141#0" expanded="true" />
+            <element signature="e#346779#347124#0" expanded="true" />
+            <element signature="e#347309#349351#0" expanded="true" />
+            <element signature="e#347431#349343#0" expanded="true" />
+            <element signature="e#347553#349332#0" expanded="true" />
+            <element signature="e#347829#349260#0" expanded="true" />
+            <element signature="e#349451#349486#0" expanded="true" />
+            <element signature="e#350477#350515#0" expanded="true" />
+            <element signature="e#350722#350925#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/admin/views/default/command.php">
+    <entry file="file://$PROJECT_DIR$/web/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
-          <folding />
+        <state relative-caret-position="702">
+          <caret line="549" column="0" selection-start-line="549" selection-start-column="0" selection-end-line="549" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#getMessages#0" expanded="true" />
+            <element signature="e#33889#42259#0" expanded="true" />
+            <element signature="e#34338#40996#0" expanded="true" />
+            <marker date="1474442155375" expanded="true" signature="31511:32669" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="31568:31800" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="31855:32568" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="31917:32525" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="31980:32209" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="32272:32408" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="36611:37769" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="36668:36900" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="36955:37668" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="37017:37625" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="37080:37309" ph="..." />
+            <marker date="1474442155375" expanded="true" signature="37372:37508" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="webServersAuthStorage">
+    <data>AAAAsOOoKc2jIXC6XwQ3+AkyA/+OBu7ti6Pqs/HB5mtvLgXteZiujmpX60gf6nDoOb2UXHk3D4JCpKdJlz31aKxcQn6+k2lezCHKtykBQOCY6JPwo3LsTEbQcOXgCfZdFMs+cYJ2ee+prBxF0AOeI0lIEwnepAcvsW3hePoPZZcKD7R27G7aSYsAVOH4zcz/9KD6vsUH9i9J19cqULy/uS6I7Op2WuY7ivmoisILufwvlXvhJ0jJky7K7mvY9lbfnD9Zxg==</data>
   </component>
 </project>

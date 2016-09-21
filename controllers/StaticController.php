@@ -11,6 +11,7 @@ use yii\web\Controller;
 class StaticController extends Controller
 {
     public $settings = [];
+    public $allRegions;
 
     /**
      * StaticController constructor.
@@ -18,6 +19,8 @@ class StaticController extends Controller
     public function constructor()
     {
         $Category = new Category();
+        $allRegions = $Category->getRegion(1);
+        $this->allRegions = $allRegions;
         $siteSettings = $Category->getSiteSettings();
         foreach ($siteSettings as $setting){
             $this->settings[$setting['settings_key']] = $setting['value'];
@@ -25,8 +28,23 @@ class StaticController extends Controller
     }
 
 
+    public function actionAkcii() {
+        $this->layout = 'city';
+        $this->constructor();
+        $StaticModel = new StaticModel();
+        $pageContent = $StaticModel->getStaticPage('akcii');
+        $data = [
+            'content' => $pageContent,
+        ];
+        if(Yii::$app->request->isAjax){
+            return $this->renderPartial('akcii', $data);
+        }else{
+            return $this->render('akcii', $data);
+        }
+    }
+    
     public function actionInstructions() {
-        $this->layout = 'main2';
+        $this->layout = 'city';
         $this->constructor();
         $StaticModel = new StaticModel();
         $pageContent = $StaticModel->getStaticPage('instructions');
@@ -41,7 +59,7 @@ class StaticController extends Controller
     }
 
     public function actionCost() {
-        $this->layout = 'main2';
+        $this->layout = 'city';
         $this->constructor();
         $StaticModel = new StaticModel();
         $pageContent = $StaticModel->getStaticPage('cost');
@@ -56,7 +74,7 @@ class StaticController extends Controller
     }
 
     public function actionRules() {
-        $this->layout = 'main2';
+        $this->layout = 'city';
         $this->constructor();
         $StaticModel = new StaticModel();
         $pageContent = $StaticModel->getStaticPage('rules');
@@ -71,7 +89,7 @@ class StaticController extends Controller
     }
 
     public function actionFaq() {
-        $this->layout = 'main2';
+        $this->layout = 'city';
         $this->constructor();
         $StaticModel = new StaticModel();
         $pageContent = $StaticModel->getStaticPage('faq');

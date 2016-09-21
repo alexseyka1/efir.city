@@ -19,14 +19,20 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'css/site.css',
+        'smiles/jquery.cssemoticons.css',
+        'css/style.css',
+        /*'css/jquery.custom-scroll.css',
+        'css/jquery.custom-scroll2.css',
+        'css/jquery.custom-scroll3.css',
+        'css/jquery.custom-scroll4.css',
+        'css/jquery.custom-scroll5.css', */   
     ];
     public $js = [
-        'js/site.js',
+        //'js/jquery.custom-scroll.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+        //'yii\bootstrap\BootstrapPluginAsset',
         //'yiizh\fuelux\FuelUXAsset',
     ];
 }
